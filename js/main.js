@@ -52,9 +52,13 @@ function imprimir(){
 }
 //Fin imprimir
 $(document).ready(function(){
+	$('.container').load('juego1.php .container');
+
+	/*
+		//prueba jquery
 	$('#areaA').click(function(){
 	    $('#nombre').val('Area A');
-	   /* var incremento = document.getElementById("zona").length;
+	    var incremento = document.getElementById("zona").length;
 	    console.log("Valor de zona: "+incremento);
 	    $('#zona').append(
     		$('<option>', {
@@ -62,13 +66,29 @@ $(document).ready(function(){
     			text: 'Zona A',
     		}));
    		$('#zona').val(incremento);
-    	*/	
+    	
 	    //$('.cambioTexto p').text('Cambiado!');
-
 	});
     $('#areaB').click(function(){
     	$('#nombre').val('Area B');
     });
+	*/
 
-   //prueba 
+   $('#juego1 a').click(function(){
+   		$('.container').load('juego1.php .container');
+   		return false;
+   });
+
+   $('#juego2 a').click(function(){
+   		$('.container').load('juego2.php .container');
+   		return false;
+   });
+   $('#juego3 a').click(function(){
+   		$('.container').load('juego3.php .container');
+   		return false;
+   });
+   $('#juego4 a').click(function(){
+   		$('.container').load('juego4.php .container');
+   		return false;
+   });
 });
