@@ -82,6 +82,9 @@ $(document).ready(function(){
    		$('#juego3 a').attr('class', 'inactive');
    		$('#juego4 a').attr('class', 'inactive');
    		$('#administracion a').attr('class', 'inactive');
+
+ 
+
    		return false;
    });
 
