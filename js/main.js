@@ -54,40 +54,14 @@ function imprimir(){
 $(document).ready(function(){
 	$('.container').load('juego.php .containerJuego1'); //carga el juego 1 al abrir la aplicación
 	$('#juego1 a').attr('class','active'); //agrega la clase 'active' al elemento 1 del nav
-  $(document).ajaxComplete(function(){
-    $('form').attr('autocomplete', 'off');  //agrega el atributo autcomplete='off' a todos los formularios luego de ser cargados por ajax
-  });
 
-	/*
-		//prueba jquery
-	$('#areaA').click(function(){
-	    $('#nombre').val('Area A');
-	    var incremento = document.getElementById("zona").length;
-	    console.log("Valor de zona: "+incremento);
-	    $('#zona').append(
-    		$('<option>', {
-    			value : incremento,
-    			text: 'Zona A',
-    		}));
-   		$('#zona').val(incremento);
-    	
-	    //$('.cambioTexto p').text('Cambiado!');
-	});
-    $('#areaB').click(function(){
-    	$('#nombre').val('Area B');
-    });
-	*/
-
-   $('#juego1 a').click(function(){
+  $('#juego1 a').click(function(){
    		$('.container').load('juego.php .containerJuego1');
    		$(this).attr('class', 'active');
    		$('#juego2 a').attr('class', 'inactive');
    		$('#juego3 a').attr('class', 'inactive');
    		$('#juego4 a').attr('class', 'inactive');
    		$('#administracion a').attr('class', 'inactive');
-
- 
-
    		return false;
    });
 
@@ -127,4 +101,8 @@ $(document).ready(function(){
    		$('#juego4 a').attr('class', 'inactive');
    		return false;
    });
+});
+
+$(document).ajaxComplete(function(){
+    $('form').attr('autocomplete', 'off');  //agrega el atributo autcomplete='off' a todos los formularios luego de ser cargados por ajax  
 });

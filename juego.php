@@ -7,8 +7,6 @@
 
 <div class="containerJuego1">
 		<div class="stadium" id="map"></div>
-			<script type="text/javascript" src="js/raphael-min.js"></script>
-			<script type="text/javascript" src="js/map.js"></script>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" onsubmit=" return imprimir(); false;">
