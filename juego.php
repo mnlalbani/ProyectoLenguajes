@@ -159,12 +159,12 @@
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" onsubmit=" return imprimir(); false;">
-				<p>Aguilas vs Tiburones</p>
+				<p>Bravos vs Tiburones</p>
 				<input type="text" value="Equipo 1" id="equipo_1" hidden></input>
 				<input type="text" value="Equipo 2" id="equipo_2" hidden></input>
 				<p>06:00 PM</p>
 				<input type="text" value="06:00pm" id="hora" hidden></input>
-				<p>Luis Aparicio El Grande</p>
+				<p>Stadium Nueva Esparta</p>
 				<input type="text" value="lugar" id="lugar" hidden></input>
 				<p>Valor</p>
 				<input type="text" value="200" id="costo" hidden></input>
