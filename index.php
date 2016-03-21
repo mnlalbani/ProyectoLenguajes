@@ -12,11 +12,11 @@
 <body>
 		<div class="nav">
 			<ul>
-				<li id="juego1"><a href="" class="active">Juego 1</a></li>
+				<li id="juego1"><a href="">Juego 1</a></li>
 				<li id="juego2"><a href="">Juego 2</a></li>
 				<li id="juego3"><a href="">Juego 3</a></li>
 				<li id="juego4"><a href="">Juego 4</a></li>
-				<li id="administracion"><a href="administracion.php">Administración</a></li>
+				<li id="administracion"><a href="">Administración</a></li>
 			</ul>
 		</div>
 		<div class="container"></div>

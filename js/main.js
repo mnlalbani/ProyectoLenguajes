@@ -53,6 +53,7 @@ function imprimir(){
 //Fin imprimir
 $(document).ready(function(){
 	$('.container').load('juego1.php .container');
+	$('#juego1 a').attr('class','active');
 
 	/*
 		//prueba jquery
@@ -76,19 +77,48 @@ $(document).ready(function(){
 
    $('#juego1 a').click(function(){
    		$('.container').load('juego1.php .container');
+   		$(this).attr('class', 'active');
+   		$('#juego2 a').attr('class', 'inactive');
+   		$('#juego3 a').attr('class', 'inactive');
+   		$('#juego4 a').attr('class', 'inactive');
+   		$('#administracion a').attr('class', 'inactive');
    		return false;
    });
 
    $('#juego2 a').click(function(){
    		$('.container').load('juego2.php .container');
+   		$(this).attr('class', 'active');
+   		$('#juego1 a').attr('class', 'inactive');
+   		$('#juego3 a').attr('class', 'inactive');
+   		$('#juego4 a').attr('class', 'inactive');
+   		$('#administracion a').attr('class', 'inactive');
    		return false;
    });
    $('#juego3 a').click(function(){
    		$('.container').load('juego3.php .container');
+   		$(this).attr('class', 'active');
+   		$('#juego1 a').attr('class', 'inactive');
+   		$('#juego2 a').attr('class', 'inactive');
+   		$('#juego4 a').attr('class', 'inactive');
+   		$('#administracion a').attr('class', 'inactive');
    		return false;
    });
    $('#juego4 a').click(function(){
    		$('.container').load('juego4.php .container');
+   		$(this).attr('class', 'active');
+   		$('#juego1 a').attr('class', 'inactive');
+   		$('#juego2 a').attr('class', 'inactive');
+   		$('#juego3 a').attr('class', 'inactive');
+   		$('#administracion a').attr('class', 'inactive');
+   		return false;
+   });
+   $('#administracion a').click(function(){
+   		$('.container').load('administracion.php .container');
+   		$(this).attr('class', 'active');
+   		$('#juego1 a').attr('class', 'inactive');
+   		$('#juego2 a').attr('class', 'inactive');
+   		$('#juego3 a').attr('class', 'inactive');
+   		$('#juego4 a').attr('class', 'inactive');
    		return false;
    });
 });

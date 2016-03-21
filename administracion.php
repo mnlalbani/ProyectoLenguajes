@@ -11,15 +11,6 @@
 </head>
 <body>
 	<div class="container">
-		<div class="nav">
-			<ul>
-				<li><a href="index.php">Juego 1</a></li>
-				<li><a href="">Juego 2</a></li>
-				<li><a href="">Juego 3</a></li>
-				<li><a href="">Juego 4</a></li>
-				<li  id="administracion"><a href="administracion.php" class="active">Administración</a></li>
-			</ul>
-		</div>
 		<div class="track">
 			<form method="post" action="" onsubmit="">
 				<div class="contenedorCampo">
