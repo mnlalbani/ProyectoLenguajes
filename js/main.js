@@ -52,7 +52,7 @@ function imprimir(){
 }
 //Fin imprimir
 $(document).ready(function(){
-	$('.container').load('juego1.php .container');
+	$('.container').load('juego.php .containerJuego1');
 	$('#juego1 a').attr('class','active');
 
 	/*
@@ -76,7 +76,7 @@ $(document).ready(function(){
 	*/
 
    $('#juego1 a').click(function(){
-   		$('.container').load('juego1.php .container');
+   		$('.container').load('juego.php .containerJuego1');
    		$(this).attr('class', 'active');
    		$('#juego2 a').attr('class', 'inactive');
    		$('#juego3 a').attr('class', 'inactive');
@@ -89,7 +89,7 @@ $(document).ready(function(){
    });
 
    $('#juego2 a').click(function(){
-   		$('.container').load('juego2.php .container');
+   		$('.container').load('juego.php .containerJuego2');
    		$(this).attr('class', 'active');
    		$('#juego1 a').attr('class', 'inactive');
    		$('#juego3 a').attr('class', 'inactive');
@@ -98,7 +98,7 @@ $(document).ready(function(){
    		return false;
    });
    $('#juego3 a').click(function(){
-   		$('.container').load('juego3.php .container');
+   		$('.container').load('juego.php .containerJuego3');
    		$(this).attr('class', 'active');
    		$('#juego1 a').attr('class', 'inactive');
    		$('#juego2 a').attr('class', 'inactive');
@@ -107,7 +107,7 @@ $(document).ready(function(){
    		return false;
    });
    $('#juego4 a').click(function(){
-   		$('.container').load('juego4.php .container');
+   		$('.container').load('juego.php .containerJuego4');
    		$(this).attr('class', 'active');
    		$('#juego1 a').attr('class', 'inactive');
    		$('#juego2 a').attr('class', 'inactive');
@@ -116,7 +116,7 @@ $(document).ready(function(){
    		return false;
    });
    $('#administracion a').click(function(){
-   		$('.container').load('administracion.php .container');
+   		$('.container').load('juego.php .containerAdministracion');
    		$(this).attr('class', 'active');
    		$('#juego1 a').attr('class', 'inactive');
    		$('#juego2 a').attr('class', 'inactive');
