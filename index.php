@@ -3,7 +3,7 @@
 <head>
 	<script type="text/javascript" src="js/jquery-2.2.1.js"></script>
 	<meta charset="utf-8">
-	<!--<meta http-equiv="refresh" content="10">-->
+	<!--<meta http-equiv="refresh" content="1">-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 	<script type="text/javascript" src="js/main.js"></script>

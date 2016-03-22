@@ -50,7 +50,7 @@ $(document).ajaxComplete(function(){
   regions["1"] = map.path("m 354.15557,298.66329 6.42857,-9.28571 -18.39285,-11.96429 -6.69643,9.55357 z");
   regions["oficial"] = map.path("m 229.04849,379.98468 6.07143,0.26786 5.26786,-0.26786 2.05357,22.67857 -7.85714,0.53572 -7.3061,0.074 z");
 
-  for(var regionName in regions) {
+  /*for(var regionName in regions) {
       (function (region) {
           region.attr(style);
 
@@ -69,4 +69,7 @@ $(document).ajaxComplete(function(){
 
       })(regions[regionName]);
     }
+    */
+
+    $(regions).hover()
 });

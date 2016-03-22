@@ -65,6 +65,8 @@ body{
 	-webkit-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
 	-moz-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
 	box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
+
+
 }
 
 .nav ul {
@@ -108,10 +110,11 @@ body{
 
 /*Estadio*/
 .stadium{
-	width: 64.2%;
+	width: 62%;
 	height: 850px;
 	float: left;
 	margin-bottom: 10px;
+	margin-left: 20px;
 	background-color: #ffffff;
 	text-align: center;
 
@@ -124,6 +127,7 @@ body{
 	width: 34.5%;
 	height: 850px;
 	float: right;
+	margin-right: 20px;
 	background-color: #ffffff;
 
 	text-align: center;
@@ -188,12 +192,15 @@ label{
 	border: none;
 	border-bottom: solid 2px #f1f1f1;
 	margin-bottom: 10px;
+	text-align: center;
+	font-size: 15px;
 }
 .inputText:focus{
 	outline:none;
 	border-bottom: solid 2px #009688;
 	transition: .5s;
 	font-size: 15px;
+	text-align: center;
 }
 
 input:placeholder-shown{
