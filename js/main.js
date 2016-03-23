@@ -105,4 +105,5 @@ $(document).ready(function(){
 
 $(document).ajaxComplete(function(){
     $('form').attr('autocomplete', 'off');  //agrega el atributo autcomplete='off' a todos los formularios luego de ser cargados por ajax  
+    
 });
