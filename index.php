@@ -20,7 +20,7 @@
 			</ul>
 		</div>
 		<div class="container"></div>
-	<!--<script type="text/javascript" src="js/raphael-min.js"></script>-->
-	<!--<script type="text/javascript" src="js/map.js"></script>-->
+	<script type="text/javascript" src="js/raphael-min.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
 </body>
 </html>
