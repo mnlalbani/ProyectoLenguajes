@@ -6,7 +6,7 @@
 <body>
 
 <div class="containerJuego1">
-		<div class="stadium" id="map"></div>
+		<div class="stadium" id="map1"></div>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" onsubmit=" return imprimir(); false;">
@@ -53,9 +53,7 @@
 </div>
 
 <div class="containerJuego2">
-		<div class="stadium">
-			<p>Prueba juego 2</p>
-		</div>
+		<div class="stadium" id="map2"></div>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" onsubmit=" return imprimir(); false;">
@@ -102,9 +100,7 @@
 </div>
 
 <div class="containerJuego3">
-		<div class="stadium">
-			<p>Prueba juego 3</p>
-		</div>
+		<div class="stadium" id="map3"></div>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" onsubmit=" return imprimir(); false;">
@@ -151,9 +147,7 @@
 </div>
 
 <div class="containerJuego4">
-		<div class="stadium">
-			<p>Prueba juego 4</p>
-		</div>
+		<div class="stadium" id="map4"></div>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" onsubmit=" return imprimir(); false;">
