@@ -39,6 +39,8 @@
        url('../fonts/roboto-v15-latin/roboto-v15-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
+svg { height: 100%; width: 100%}
+
 /* Index */
 *{
 	font-family: 'Roboto';
