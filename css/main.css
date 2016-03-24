@@ -78,6 +78,7 @@ body{
 
 .nav li {
     float: left;
+
 }
 
 .nav li a {
@@ -160,7 +161,7 @@ label{
 
 .track{
 	width: 49.5%;
-	height: 850px;
+	height: 642px;
 	float: left;
 	margin-bottom: 10px;
 	background-color: #ffffff;
@@ -173,7 +174,7 @@ label{
 
 .resumen{
 	width: 49.5%;
-	height: 850px;
+	height: 642px;
 	float: right;
 	background-color: #ffffff;
 

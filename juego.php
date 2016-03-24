@@ -10,9 +10,9 @@
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" onsubmit=" return imprimir(); false;">
-				<p>Aguilas vs Tiburones</p>
-				<input type="text" value="Equipo 1" id="equipo_1" hidden></input>
-				<input type="text" value="Equipo 2" id="equipo_2" hidden></input>
+				<p>Aguilas del Zulia vs Cardenales de Lara</p>
+				<input type="text" value="Aguilas del Zulia" id="equipo_1" hidden></input>
+				<input type="text" value="Cardenales de Lara" id="equipo_2" hidden></input>
 				<p>06:00 PM</p>
 				<input type="text" value="06:00pm" id="hora" hidden></input>
 				<p>Luis Aparicio El Grande</p>
@@ -57,9 +57,9 @@
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" onsubmit=" return imprimir(); false;">
-				<p>Magallanes vs Tiburones</p>
-				<input type="text" value="Equipo 1" id="equipo_1" hidden></input>
-				<input type="text" value="Equipo 2" id="equipo_2" hidden></input>
+				<p>Navegantes del Magallanes vs Tiburones de La Guaira</p>
+				<input type="text" value="Navegantes del Magallanes" id="equipo_1" hidden></input>
+				<input type="text" value="Tiburones de La Guaira" id="equipo_2" hidden></input>
 				<p>06:00 PM</p>
 				<input type="text" value="06:00pm" id="hora" hidden></input>
 				<p>Estadio José Bernardo Pérez</p>
@@ -104,9 +104,9 @@
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" onsubmit=" return imprimir(); false;">
-				<p>Leones del Caracas vs Tiburones</p>
-				<input type="text" value="Equipo 1" id="equipo_1" hidden></input>
-				<input type="text" value="Equipo 2" id="equipo_2" hidden></input>
+				<p>Leones del Caracas vs Caribes de Oriente</p>
+				<input type="text" value="Leones del Caracas" id="equipo_1" hidden></input>
+				<input type="text" value="Caribes de Oriente" id="equipo_2" hidden></input>
 				<p>06:00 PM</p>
 				<input type="text" value="06:00pm" id="hora" hidden></input>
 				<p>Estadio Universitario de Caracas</p>
@@ -151,9 +151,9 @@
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" onsubmit=" return imprimir(); false;">
-				<p>Bravos vs Tiburones</p>
-				<input type="text" value="Equipo 1" id="equipo_1" hidden></input>
-				<input type="text" value="Equipo 2" id="equipo_2" hidden></input>
+				<p>Bravos de Margarita vs Tigres de Aragua</p>
+				<input type="text" value="Bravos de Margarita" id="equipo_1" hidden></input>
+				<input type="text" value="Tigres de Aragua" id="equipo_2" hidden></input>
 				<p>06:00 PM</p>
 				<input type="text" value="06:00pm" id="hora" hidden></input>
 				<p>Stadium Nueva Esparta</p>
