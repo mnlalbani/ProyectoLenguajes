@@ -20,7 +20,7 @@
 				<p>Valor</p>
 				<input type="text" value="200" id="costo" hidden></input>
 				<hr>
-
+					<p>Zona Asiento</p>
 				<hr>
 				<p class="headerText">Datos del Cliente</p>
 
@@ -197,8 +197,9 @@
 		<div class="track">
 			<form method="post" action="" onsubmit="">
 				<div class="contenedorCampo">
+				<p>Administración de Ticket</p>
 					<label for="ticket_id">Ticket ID: </label>
-						<input type="text" name="ticket_id" id="ticket_id" placeholder="Ticket ID" required></input>
+						<input type="text" name="ticket_id" id="ticket_id" class="inputText"placeholder="Ticket ID" required></input>
 				</div>
 				<button  class="button" >Confirmar Ticket</button>
 				<button  class="button" >Modificar Ticket</button>

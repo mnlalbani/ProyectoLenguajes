@@ -101,8 +101,8 @@ body{
     background-color: white;
     color: #009688;
     transition: .5s;
-
 }
+
 
 .nav #administracion{
 	float: right;
@@ -159,11 +159,12 @@ label{
 }
 /* Página Administración */
 
-.track{
-	width: 49.5%;
+.track, .resumen{
+	width: 48%;
 	height: 642px;
 	float: left;
 	margin-bottom: 10px;
+	margin-left: 20px;
 	background-color: #ffffff;
 	text-align: center;
 
@@ -173,22 +174,17 @@ label{
 }
 
 .resumen{
-	width: 49.5%;
-	height: 642px;
 	float: right;
-	background-color: #ffffff;
-
-	text-align: center;
-	margin-bottom: 10px;
 	margin-left: 0px;
-
-	-webkit-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
-	-moz-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
-	box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);	
+	margin-right: 20px;
+}
+.track p, .resumen p {
+	text-transform: uppercase;
+	font-weight: 500;
 }
 /*Botones y Formulario*/
 
-.inputText {
+.inputText{
 	border: none;
 	border-bottom: solid 2px #f1f1f1;
 	margin-bottom: 10px;
@@ -207,6 +203,8 @@ input:placeholder-shown{
 	font-size: 15px;
 	text-align: center;
 }
+
+
 .button{
 	width: 100px;
 	height: 30px;

@@ -55,8 +55,6 @@ $(document).ready(function(){
 	$('.container').load('juego.php .containerJuego1'); //carga el juego 1 al abrir la aplicación
 	$('#juego1 a').attr('class','active'); //agrega la clase 'active' al elemento 1 del nav
 
-   
-
   $('#juego1 a').click(function(){
    		$('.container').load('juego.php .containerJuego1');
    		$(this).attr('class', 'active');
@@ -106,6 +104,6 @@ $(document).ready(function(){
 });
 
 $(document).ajaxComplete(function(){
-    $('form').attr('autocomplete', 'off');  //agrega el atributo autcomplete='off' a todos los formularios luego de ser cargados por ajax  
-    
+    $('form').attr('autocomplete', 'off');  //agrega el atributo autcomplete='off' a todos los formularios luego de ser cargados por ajax 
+
 });
