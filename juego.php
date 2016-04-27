@@ -9,20 +9,21 @@
 		<div class="stadium" id="estadio_aguilas"></div>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
-			<form method="post" action="" onsubmit=" return imprimir(); false;">
+			<form method="POST" action="" id="aguilasCardenales">
 				<p>Aguilas del Zulia vs Cardenales de Lara</p>
-				<input type="text" value="Aguilas del Zulia" id="equipo_1" hidden></input>
-				<input type="text" value="Cardenales de Lara" id="equipo_2" hidden></input>
+				<input type="text" value="Aguilas del Zulia" id="equipo_1" hidden name="equipo_1"></input>
+				<input type="text" value="Cardenales de Lara" id="equipo_2" hidden name="equipo_2"></input>
 				<p>06:00 PM</p>
-				<input type="text" value="06:00pm" id="hora" hidden></input>
+				<input type="text" value="06:00pm" name="hora" id="hora" hidden></input>
 				<p>Luis Aparicio El Grande</p>
-				<input type="text" value="Luis Aparicio El Grande" id="lugar" hidden></input>
+				<input type="text" value="Luis Aparicio El Grande" id="lugar" name="lugar" hidden></input>
 				<p>Valor</p>
-				<input type="text" value="200" id="costo" hidden></input>
+				<input type="text" value="200" id="costo" name="valor" hidden></input>
 				<hr>
 					<p id="zonaAsiento">Zona Asiento</p>
-					<input type="text" name="zonaElegida" id="zonaElegida" hidden value="">
-					<input type="text" name="asientoElegido" id="asientoElegido" hidden value="">
+					<input type="text" name="zonaElegida" id="zonaElegida" hidden >
+					<input type="text" name="asientoElegido" id="asientoElegido" hidden >
+					<input type="text" hidden id="ticketId" name="ticketId" ></input>
 				<hr>
 				<p class="headerText">Datos del Cliente</p>
 
@@ -49,6 +50,7 @@
 				<div class="buttonContainer">
 					<button class="button" type="submit">Imprimir</button>
 					<button class="button" type="reset">Reiniciar</button>
+					<div id="response"></div>
 				</div>
 			</form>
 		</div>
@@ -105,7 +107,7 @@
 		<div class="stadium" id="estadio_leones"></div>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
-			<form method="post" action="" onsubmit=" return imprimir(); false;">
+			<form method="post" action="" >
 				<p>Leones del Caracas vs Caribes de Oriente</p>
 				<input type="text" value="Leones del Caracas" id="equipo_1" hidden></input>
 				<input type="text" value="Caribes de Oriente" id="equipo_2" hidden></input>
@@ -152,7 +154,7 @@
 		<div class="stadium" id="estadio_bravos"></div>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
-			<form method="post" action="" onsubmit=" return imprimir(); false;">
+			<form method="post" action="">
 				<p>Bravos de Margarita vs Tigres de Aragua</p>
 				<input type="text" value="Bravos de Margarita" id="equipo_1" hidden></input>
 				<input type="text" value="Tigres de Aragua" id="equipo_2" hidden></input>
@@ -197,20 +199,22 @@
 
 <div class="containerAdministracion">
 		<div class="track">
-			<form method="post" action="" onsubmit="">
+			<form method="POST" action="" id="formAdministracion">
 				<div class="contenedorCampo">
 				<p>Administración de Ticket</p>
 					<label for="ticket_id">Ticket ID: </label>
 						<input type="text" name="ticket_id" id="ticket_id" class="inputText"placeholder="Ticket ID" required></input>
 				</div>
-				<button  class="button" >Confirmar Ticket</button>
-				<button  class="button" >Modificar Ticket</button>
-				<button  class="button" >Cancelar Ticket</button>
+				<button  class="button" type="submit" name="confirmar" value="confirmar">Confirmar Ticket</button>
+				<button  class="button" type="submit" name="modificar" value="modificar">Modificar Ticket</button>
+				<button  class="button" type="submit" name="cancelar" value="cancelar">Cancelar Ticket</button>
 			</form>
+			<div id="response"></div>
 		</div>
 		<div class="resumen">
 			<p>Resumen de Ventas</p>
 			<button  class="button" >Generar Resumen</button>
+			<div id="responseResumen"></div>
 		</div>
 </div>
 

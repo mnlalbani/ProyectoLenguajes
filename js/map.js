@@ -1,10 +1,6 @@
 $(document).ajaxComplete(function(){
   //Estadio Aguilas del Zulia
-if ($('#estadio_aguilas').length == 1) {
-
-
-
- 
+if (($('#estadio_aguilas').length == 1) && ($('svg').length == 0)) {
     var rsr = Raphael('estadio_aguilas', '783.04701', '642.00001');
     rsr.setViewBox(0, 0, '783.04701', '642', true);
     rsr.canvas.setAttribute('preserveAspectRatio', 'xMidYMid meet');
@@ -83,9 +79,11 @@ for(var regionName in regions) {
         }, true);
         region[0].addEventListener("click", function() {
           var asiento = Math.floor((Math.random() * 10) + 1);
+          console.log(region.data('id'));
           $('#zonaAsiento').text("Zona: "+region.data('id')+" | Asiento: #"+asiento);
-          $('#zonaElegina').val(region.data('id'));
-          $('#asientoElegido').val(asiento);
+          $('#zonaElegida').val(region.data('id'));
+          $('#asientoElegido').val(""+asiento+"");
+          $('#ticketId').val(region.data('id')+asiento);
           //console.log(document.getElementById('asientoElegido').value);
         }, true);
 

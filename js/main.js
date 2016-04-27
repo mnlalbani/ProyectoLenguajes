@@ -37,7 +37,7 @@ function validar_telefono(){
 //Fin validación formulario
 
 //Imprimir
-function imprimir(){
+/*function imprimir(){
 			var cedula = document.getElementById("cedula").value;
 			var nombre = document.getElementById("nombre").value;
 			var apellido = document.getElementById("apellido").value;
@@ -49,7 +49,7 @@ function imprimir(){
 			var precio = document.getElementById("costo").value;
 
 			alert("Datos de Juego Y Ticket \n "+equipos+"\n"+hora+"\n"+lugar+"\n"+precio+" \nCliente: \nC.I: "+cedula+"\nNombre: "+nombre+"\nApellido: "+apellido+"\nTelefono: "+telefono+"\nCorreo: "+correo);
-}
+}*/
 //Fin imprimir
 $(document).ready(function(){
 	$('.container').load('juego.php .containerJuego1'); //carga el juego 1 al abrir la aplicación
@@ -105,5 +105,40 @@ $(document).ready(function(){
 
 $(document).ajaxComplete(function(){
     $('form').attr('autocomplete', 'off');  //agrega el atributo autcomplete='off' a todos los formularios luego de ser cargados por ajax 
+
+   $('#aguilasCardenales').unbind('submit');
+   $('#aguilasCardenales').on('submit',function(e){
+      e.preventDefault();
+      var details = $('#aguilasCardenales').serialize();
+      $.post('php/registroTicket.php',details,function(data){
+         $("form").trigger("reset");
+         var arr = JSON.parse(data);
+         if (arr.success == true) {
+            $('#response').html(arr.message);
+         }
+         else{
+            $('#response').html(arr.errors);
+         }
+      });
+   });
+
+      var op;
+   $('button').unbind('click');
+   $('button').on('click',function(){
+      op = $(this).val();
+      //console.log(op);
+   })
+   $('#formAdministracion').unbind('submit');
+   $('#formAdministracion').on('submit',function(e){
+      e.preventDefault();
+      var details = $('#formAdministracion').serialize();
+      details += "&op="+ op;
+      console.log(op);
+      console.log(details);
+      $.post('php/administracionTicket.php',details,function(data){
+         $("form").trigger("reset");
+         $('#response').html(data);
+      });
+   });
 
 });
