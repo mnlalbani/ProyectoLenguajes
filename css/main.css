@@ -54,16 +54,15 @@ body{
     padding:0;
 }
 
-
 /*Navegacion*/
 .nav{
 	width: 100%;
 	margin-top: 0;
 	margin-bottom: 10px;
 
-	-webkit-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
-	-moz-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
-	box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 
 
 }
@@ -118,9 +117,9 @@ body{
 	background-color: #ffffff;
 	text-align: center;
 
-	-webkit-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
-	-moz-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
-	box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 /*Ticket*/
 .ticket{
@@ -134,9 +133,9 @@ body{
 	margin-bottom: 10px;
 	margin-left: 0px;
 
-	-webkit-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
-	-moz-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
-	box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .ticket hr {
@@ -168,9 +167,9 @@ label{
 	background-color: #ffffff;
 	text-align: center;
 
-	-webkit-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
-	-moz-box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
-	box-shadow: -13px 19px 8px -14px rgba(232,232,232,0.77);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .resumen{

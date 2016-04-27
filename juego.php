@@ -16,11 +16,13 @@
 				<p>06:00 PM</p>
 				<input type="text" value="06:00pm" id="hora" hidden></input>
 				<p>Luis Aparicio El Grande</p>
-				<input type="text" value="lugar" id="lugar" hidden></input>
+				<input type="text" value="Luis Aparicio El Grande" id="lugar" hidden></input>
 				<p>Valor</p>
 				<input type="text" value="200" id="costo" hidden></input>
 				<hr>
-					<p>Zona Asiento</p>
+					<p id="zonaAsiento">Zona Asiento</p>
+					<input type="text" name="zonaElegida" id="zonaElegida" hidden value="">
+					<input type="text" name="asientoElegido" id="asientoElegido" hidden value="">
 				<hr>
 				<p class="headerText">Datos del Cliente</p>
 
@@ -63,7 +65,7 @@
 				<p>06:00 PM</p>
 				<input type="text" value="06:00pm" id="hora" hidden></input>
 				<p>Estadio José Bernardo Pérez</p>
-				<input type="text" value="lugar" id="lugar" hidden></input>
+				<input type="text" value="Estadio José Bernardo Pérez" id="lugar" hidden></input>
 				<p>Valor</p>
 				<input type="text" value="200" id="costo" hidden></input>
 				<hr>
@@ -110,7 +112,7 @@
 				<p>06:00 PM</p>
 				<input type="text" value="06:00pm" id="hora" hidden></input>
 				<p>Estadio Universitario de Caracas</p>
-				<input type="text" value="lugar" id="lugar" hidden></input>
+				<input type="text" value="Estadio Universitario de Caracas" id="lugar" hidden></input>
 				<p>Valor</p>
 				<input type="text" value="200" id="costo" hidden></input>
 				<hr>
@@ -157,7 +159,7 @@
 				<p>06:00 PM</p>
 				<input type="text" value="06:00pm" id="hora" hidden></input>
 				<p>Stadium Nueva Esparta</p>
-				<input type="text" value="lugar" id="lugar" hidden></input>
+				<input type="text" value="Stadium Nueva Esparta" id="lugar" hidden></input>
 				<p>Valor</p>
 				<input type="text" value="200" id="costo" hidden></input>
 				<hr>

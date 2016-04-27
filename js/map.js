@@ -9,80 +9,89 @@ if ($('#estadio_aguilas').length == 1) {
     rsr.setViewBox(0, 0, '783.04701', '642', true);
     rsr.canvas.setAttribute('preserveAspectRatio', 'xMidYMid meet');
 
-  var layer2 = rsr.set();
-  var oficial = rsr.path("m 374.39083,448.14259 10.82374,0.47752 9.39118,-0.47752 3.66097,40.42982 -14.00718,0.95504 -13.02482,0.13193 z").attr({id: 'oficial',parent: 'layer2',fill: '#000000',"fill-rule": 'evenodd',stroke: '#000000',"stroke-width": '1',"stroke-linecap": 'butt',"stroke-linejoin": 'miter',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1',opacity: '0.945'}).transform("t0,142").data('id', 'oficial');
-  var c6 = rsr.path("m 402.6478,487.86732 17.67066,-3.60166 15.53218,-4.50209 -11.70542,-39.28063 -12.94348,4.16442 -12.26816,1.46319 z").attr({id: 'c6',parent: 'layer2',opacity: '0.945',fill: '#ad1d29',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c6');
-  var vip3 = rsr.path("m 387.2292,399.94063 16.87229,-2.06926 14.96221,-6.52606 18.46402,36.92803 -23.23919,9.23201 -26.10431,3.18344 z").attr({id: 'vip3',parent: 'layer2',opacity: '0.945',fill: '#81b2b9',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'vip3');
-  var c3 = rsr.path("m 439.9153,478.09433 21.01078,-9.232 18.94153,-12.09711 -23.55754,-33.74457 -6.04855,3.66096 4.77518,10.18704 -15.75809,7.95863 -5.25269,-8.75448 -6.3669,2.70592 z").attr({id: 'c3',parent: 'layer2',opacity: '0.945',fill: '0-#ad1d29:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c3');
-  var c4 = rsr.path("m 482.2552,394.52875 29.92444,22.92085 -3.18346,2.70593 -0.31834,4.61601 1.27338,1.59173 -11.61959,13.68884 -15.12139,15.43972 -24.35341,-34.38125 12.73381,-11.93795 z").attr({id: 'c4',parent: 'layer2',opacity: '0.945',fill: '0-#ad1d29:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c4');
-  var vip4 = rsr.path("m 422.08798,389.27608 13.05215,-10.50539 9.39118,-13.68884 32.15285,24.83091 -15.75808,21.16994 -19.41905,15.28057 z").attr({id: 'vip4',parent: 'layer2',opacity: '0.945',fill: '#81b2b9',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'vip4');
-  var b4 = rsr.path("m 517.27316,416.17622 25.94511,-36.92801 -33.74457,-23.39836 -25.46759,35.33628 z").attr({id: 'b4',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b4');
-  var b5 = rsr.path("m 519.50158,343.2752 7.16276,5.57103 10.34621,-14.4847 -7.32193,-6.04854 5.7302,-7.79945 33.90375,22.44331 -23.55754,32.63037 -33.26705,-22.12498 z").attr({id: 'b5',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b5');
-  var a3 = rsr.path("m 446.60055,362.69425 32.15286,24.67175 37.72388,-53.16362 -32.9487,-21.80664 z").attr({id: 'a3',parent: 'layer2',opacity: '0.945',fill: '0-#e99523:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'a3');
-  var b6 = rsr.path("m 537.64724,317.8076 24.03504,-33.10789 34.06294,22.125 -23.55754,32.9487 z").attr({id: 'b6',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b6');
-  var a4 = rsr.path("m 523.00337,260.66466 32.63037,21.16995 -36.92803,50.13935 -32.15285,-21.96581 z").attr({id: 'a4',parent: 'layer2',opacity: '0.945',fill: '0-#e99523:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'a4');
-  var l3 = rsr.path("m 558.02132,278.81033 11.46042,-16.55393 -32.78953,-21.32914 -11.93794,17.03146 z").attr({id: 'l3',parent: 'layer2',opacity: '0.945',fill: '0-#2c337a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'l3');
-  var l4 = rsr.path("m 597.42327,303.16832 11.46042,-16.55394 -32.78953,-21.32912 -11.93794,17.03146 z").attr({id: 'l4',parent: 'layer2',opacity: '0.945',fill: '0-#2c337a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'l4');
-  var l1 = rsr.path("m 210.46137,275.47227 -11.46041,-16.55394 32.78952,-21.32912 11.93794,17.03146 z").attr({id: 'l1',parent: 'layer2',opacity: '0.945',fill: '0-#2c337a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'l1');
-  var l2 = rsr.path("m 170.34989,299.66651 -11.46042,-16.55393 32.78954,-21.32913 11.93793,17.03146 z").attr({id: 'l2',parent: 'layer2',opacity: '0.945',fill: '0-#2c337a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'l2');
-  var a1 = rsr.path("m 245.57139,260.33227 -32.63542,20.98428 36.93378,49.6996 32.15781,-21.77317 z").attr({id: 'a1',parent: 'layer2',opacity: '0.945',fill: '0-#e99523:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'a1');
-  var a2 = rsr.path("m 319.7649,364.60432 -32.15286,24.67176 -37.72388,-53.16363 32.9487,-21.80664 z").attr({id: 'a2',parent: 'layer2',opacity: '0.945',fill: '0-#e99523:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'a2');
-  var vip1 = rsr.path("m 343.72448,392.45952 -13.05215,-10.50539 -9.39117,-13.68884 -32.15285,24.83091 15.75807,21.16995 19.41905,15.28056 z").attr({id: 'vip1',parent: 'layer2',opacity: '0.945',fill: '#81b2b9',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'vip1');
-  var vip2 = rsr.path("m 381.18379,401.21401 -16.87229,-2.06925 -14.96221,-6.52607 -18.46403,36.92804 23.23921,9.23201 26.1043,3.18344 z").attr({id: 'vip2',parent: 'layer2',opacity: '0.945',fill: '#81b2b9',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'vip2');
-  var c5 = rsr.path("m 366.06686,489.14071 -17.67065,-3.60165 -15.53219,-4.5021 11.70543,-39.28064 12.94347,4.16443 12.26816,1.46318 z").attr({id: 'c5',parent: 'layer2',opacity: '0.945',fill: '#ad1d29',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c5');
-  var c2 = rsr.path("m 328.34767,480.00441 -21.01079,-9.23201 -18.94153,-12.09711 23.55754,-33.74457 6.04857,3.66096 -4.7752,10.18704 15.75809,7.95864 5.2527,-8.75449 6.3669,2.70592 z").attr({id: 'c2',parent: 'layer2',opacity: '0.945',fill: '0-#ad1d29:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c2');
-  var c1 = rsr.path("m 284.646,396.43883 -29.92445,22.92086 3.18347,2.70591 0.31834,4.61601 -1.27339,1.59173 11.6196,13.68884 15.12139,15.43972 24.3534,-34.38125 -12.73381,-11.93795 z").attr({id: 'c1',parent: 'layer2',opacity: '0.945',fill: '#ad1d29',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c1');
-  var b3 = rsr.path("m 248.91914,416.8129 -25.94512,-36.92801 33.74457,-23.39836 25.4676,35.33629 z").attr({id: 'b3',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b3');
-  var b2 = rsr.path("m 246.53942,342.63851 -7.16277,5.57104 -10.34621,-14.4847 7.32193,-6.04854 -5.7302,-7.79945 -33.90375,22.44331 23.55754,32.63036 33.26705,-22.12497 z").attr({id: 'b2',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b2');
-  var b1 = rsr.path("m 229.63739,317.17092 -24.03504,-33.1079 -34.06295,22.125 23.55755,32.9487 z").attr({id: 'b1',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b1');
-  var grada = rsr.path("m 154.24558,277.62023 75.63494,-44.12037 c -35.38802,-60.67979 -66.2521,-91.198 -82.95187,-124.47512 -37.29832,-74.323271 108.05327,-153.090518 249.5465,-150.651472 138.86072,2.393657 266.32138,79.099726 233.86959,148.139982 -18.00828,38.31209 -54.04291,77.34024 -90.72118,128.78743 l 72.03326,45.92121 C 687.39668,188.76234 733.90501,117.00784 721.95399,60.345004 687.03422,-105.21853 458.58769,-128.49395 393.75455,-130.20573 318.78918,-132.18501 2.6629023,-75.459819 64.545859,134.48226 c 12.975221,44.0193 52.678081,86.77523 89.699721,143.13797 z").attr({id: 'grada',parent: 'layer2',opacity: '0.945',fill: '0-#cccccc:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'grada');
-      layer2.attr({'id': 'layer2','style': 'display:inline','name': 'layer2'});layer2.transform("t0,142");
+  var regions = {}
+  regions['oficial'] = rsr.path("m 374.39083,448.14259 10.82374,0.47752 9.39118,-0.47752 3.66097,40.42982 -14.00718,0.95504 -13.02482,0.13193 z").attr({id: 'oficial',parent: 'layer2',fill: '#000000',"fill-rule": 'evenodd',stroke: '#000000',"stroke-width": '1',"stroke-linecap": 'butt',"stroke-linejoin": 'miter',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1',opacity: '0.945'}).transform("t0,142").data('id', 'oficial');
+  regions['c6'] = rsr.path("m 402.6478,487.86732 17.67066,-3.60166 15.53218,-4.50209 -11.70542,-39.28063 -12.94348,4.16442 -12.26816,1.46319 z").attr({id: 'c6',parent: 'layer2',opacity: '0.945',fill: '#ad1d29',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c6');
+  regions['vip3'] = rsr.path("m 387.2292,399.94063 16.87229,-2.06926 14.96221,-6.52606 18.46402,36.92803 -23.23919,9.23201 -26.10431,3.18344 z").attr({id: 'vip3',parent: 'layer2',opacity: '0.945',fill: '#81b2b9',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'vip3');
+  regions['c3'] = rsr.path("m 439.9153,478.09433 21.01078,-9.232 18.94153,-12.09711 -23.55754,-33.74457 -6.04855,3.66096 4.77518,10.18704 -15.75809,7.95863 -5.25269,-8.75448 -6.3669,2.70592 z").attr({id: 'c3',parent: 'layer2',opacity: '0.945',fill: '0-#ad1d29:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c3');
+  regions['c4'] = rsr.path("m 482.2552,394.52875 29.92444,22.92085 -3.18346,2.70593 -0.31834,4.61601 1.27338,1.59173 -11.61959,13.68884 -15.12139,15.43972 -24.35341,-34.38125 12.73381,-11.93795 z").attr({id: 'c4',parent: 'layer2',opacity: '0.945',fill: '0-#ad1d29:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c4');
+  regions['vip4'] = rsr.path("m 422.08798,389.27608 13.05215,-10.50539 9.39118,-13.68884 32.15285,24.83091 -15.75808,21.16994 -19.41905,15.28057 z").attr({id: 'vip4',parent: 'layer2',opacity: '0.945',fill: '#81b2b9',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'vip4');
+  regions['b4'] = rsr.path("m 517.27316,416.17622 25.94511,-36.92801 -33.74457,-23.39836 -25.46759,35.33628 z").attr({id: 'b4',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b4');
+  regions['b5'] = rsr.path("m 519.50158,343.2752 7.16276,5.57103 10.34621,-14.4847 -7.32193,-6.04854 5.7302,-7.79945 33.90375,22.44331 -23.55754,32.63037 -33.26705,-22.12498 z").attr({id: 'b5',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b5');
+  regions['a3'] = rsr.path("m 446.60055,362.69425 32.15286,24.67175 37.72388,-53.16362 -32.9487,-21.80664 z").attr({id: 'a3',parent: 'layer2',opacity: '0.945',fill: '0-#e99523:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'a3');
+  regions['b6'] = rsr.path("m 537.64724,317.8076 24.03504,-33.10789 34.06294,22.125 -23.55754,32.9487 z").attr({id: 'b6',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b6');
+  regions['a4'] = rsr.path("m 523.00337,260.66466 32.63037,21.16995 -36.92803,50.13935 -32.15285,-21.96581 z").attr({id: 'a4',parent: 'layer2',opacity: '0.945',fill: '0-#e99523:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'a4');
+  regions['l3'] = rsr.path("m 558.02132,278.81033 11.46042,-16.55393 -32.78953,-21.32914 -11.93794,17.03146 z").attr({id: 'l3',parent: 'layer2',opacity: '0.945',fill: '0-#2c337a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'l3');
+  regions['l4'] = rsr.path("m 597.42327,303.16832 11.46042,-16.55394 -32.78953,-21.32912 -11.93794,17.03146 z").attr({id: 'l4',parent: 'layer2',opacity: '0.945',fill: '0-#2c337a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'l4');
+  regions['l1'] = rsr.path("m 210.46137,275.47227 -11.46041,-16.55394 32.78952,-21.32912 11.93794,17.03146 z").attr({id: 'l1',parent: 'layer2',opacity: '0.945',fill: '0-#2c337a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'l1');
+  regions['l2'] = rsr.path("m 170.34989,299.66651 -11.46042,-16.55393 32.78954,-21.32913 11.93793,17.03146 z").attr({id: 'l2',parent: 'layer2',opacity: '0.945',fill: '0-#2c337a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'l2');
+  regions['a1'] = rsr.path("m 245.57139,260.33227 -32.63542,20.98428 36.93378,49.6996 32.15781,-21.77317 z").attr({id: 'a1',parent: 'layer2',opacity: '0.945',fill: '0-#e99523:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'a1');
+  regions['a2'] = rsr.path("m 319.7649,364.60432 -32.15286,24.67176 -37.72388,-53.16363 32.9487,-21.80664 z").attr({id: 'a2',parent: 'layer2',opacity: '0.945',fill: '0-#e99523:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'a2');
+  regions['vip1'] = rsr.path("m 343.72448,392.45952 -13.05215,-10.50539 -9.39117,-13.68884 -32.15285,24.83091 15.75807,21.16995 19.41905,15.28056 z").attr({id: 'vip1',parent: 'layer2',opacity: '0.945',fill: '#81b2b9',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'vip1');
+  regions['vip2'] = rsr.path("m 381.18379,401.21401 -16.87229,-2.06925 -14.96221,-6.52607 -18.46403,36.92804 23.23921,9.23201 26.1043,3.18344 z").attr({id: 'vip2',parent: 'layer2',opacity: '0.945',fill: '#81b2b9',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'vip2');
+  regions['c5'] = rsr.path("m 366.06686,489.14071 -17.67065,-3.60165 -15.53219,-4.5021 11.70543,-39.28064 12.94347,4.16443 12.26816,1.46318 z").attr({id: 'c5',parent: 'layer2',opacity: '0.945',fill: '#ad1d29',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c5');
+  regions['c2'] = rsr.path("m 328.34767,480.00441 -21.01079,-9.23201 -18.94153,-12.09711 23.55754,-33.74457 6.04857,3.66096 -4.7752,10.18704 15.75809,7.95864 5.2527,-8.75449 6.3669,2.70592 z").attr({id: 'c2',parent: 'layer2',opacity: '0.945',fill: '0-#ad1d29:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c2');
+  regions['c1'] = rsr.path("m 284.646,396.43883 -29.92445,22.92086 3.18347,2.70591 0.31834,4.61601 -1.27339,1.59173 11.6196,13.68884 15.12139,15.43972 24.3534,-34.38125 -12.73381,-11.93795 z").attr({id: 'c1',parent: 'layer2',opacity: '0.945',fill: '#ad1d29',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'c1');
+  regions['b3'] = rsr.path("m 248.91914,416.8129 -25.94512,-36.92801 33.74457,-23.39836 25.4676,35.33629 z").attr({id: 'b3',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b3');
+  regions['b2'] = rsr.path("m 246.53942,342.63851 -7.16277,5.57104 -10.34621,-14.4847 7.32193,-6.04854 -5.7302,-7.79945 -33.90375,22.44331 23.55754,32.63036 33.26705,-22.12497 z").attr({id: 'b2',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b2');
+  regions['b1'] = rsr.path("m 229.63739,317.17092 -24.03504,-33.1079 -34.06295,22.125 23.55755,32.9487 z").attr({id: 'b1',parent: 'layer2',opacity: '0.945',fill: '0-#52a35a:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'b1');
+  regions['grada'] = rsr.path("m 154.24558,277.62023 75.63494,-44.12037 c -35.38802,-60.67979 -66.2521,-91.198 -82.95187,-124.47512 -37.29832,-74.323271 108.05327,-153.090518 249.5465,-150.651472 138.86072,2.393657 266.32138,79.099726 233.86959,148.139982 -18.00828,38.31209 -54.04291,77.34024 -90.72118,128.78743 l 72.03326,45.92121 C 687.39668,188.76234 733.90501,117.00784 721.95399,60.345004 687.03422,-105.21853 458.58769,-128.49395 393.75455,-130.20573 318.78918,-132.18501 2.6629023,-75.459819 64.545859,134.48226 c 12.975221,44.0193 52.678081,86.77523 89.699721,143.13797 z").attr({id: 'grada',parent: 'layer2',opacity: '0.945',fill: '0-#cccccc:0','fill-opacity': '1',"fill-opacity": '1',"fill-rule": 'nonzero',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '0',"stroke-linecap": 'butt',"stroke-linejoin": 'bevel',"stroke-miterlimit": '4',"stroke-dasharray": 'none',"stroke-opacity": '1'}).transform("t0,142").data('id', 'grada');
 
-  oficial.node.id = "oficial";
-  vip4.node.id = "vip4";
-  vip3.node.id= "vip3";
-  vip2.node.id="vip2";
-  vip1.node.id="vip1";
-  c6.node.id= "c6";
-  c5.node.id= "c5";
-  c4.node.id= "c4";
-  c3.node.id = "c3";
-  c2.node.id= "c2";
-  c1.node.id = "c1";
+/*
+  regions['oficial'].node.id="oficial";
+  regions['c6'].node.id="c6";
+  regions["vip3"].node.id="vip3";
+  regions["c3"].node.id="c3";
+  regions["c4"].node.id="c4";
+  regions["vip4"].node.id="vip4";
+  regions["b4"].node.id="b4";
+  regions["b5"].node.id="b5";
+  regions["a3"].node.id="a3";
+  regions["b6"].node.id="b6";
+  regions["a4"].node.id="a4";
+  regions["l3"].node.id="l3";
+  regions["l4"].node.id="l4";
+  regions["l1"].node.id="l1";
+  regions["l2"].node.id="l2";
+  regions["a1"].node.id="a1";
+  regions["a2"].node.id="a2";
+  regions["vip1"].node.id="vip1";
+  regions["vip2"].node.id="vip2";
+  regions["c5"].node.id="c5";
+  regions["c2"].node.id="c2";
+  regions["c1"].node.id="c1";
+  regions["b3"].node.id="b3";
+  regions["b2"].node.id="b2";
+  regions["b1"].node.id="b1";
+  regions["grada"].node.id="grada";
+*/
 
 
+for(var regionName in regions) {
+    (function (region) {
+        region[0].addEventListener("mouseover", function() {
+          style = region.attr("fill");
+            console.log(style)
+            console.log(region.data("id"))
+            region.animate({fill:'skyblue'},300,function(){
+            })
+        }, true);
+        region[0].addEventListener("mouseout", function() {
+            console.log(style);
+            //console.log(region[0].id)
+            region.animate({fill:style},300)
+        }, true);
+        region[0].addEventListener("click", function() {
+          var asiento = Math.floor((Math.random() * 10) + 1);
+          $('#zonaAsiento').text("Zona: "+region.data('id')+" | Asiento: #"+asiento);
+          $('#zonaElegina').val(region.data('id'));
+          $('#asientoElegido').val(asiento);
+          //console.log(document.getElementById('asientoElegido').value);
+        }, true);
 
-var rsrGroups = [layer2];
-layer2.push(
-  oficial ,
-  c6 ,
-  vip3 ,
-  c3 ,
-  c4 ,
-  vip4 ,
-  b4 ,
-  b5 ,
-  a3 ,
-  b6 ,
-  a4 ,
-  l3 ,
-  l4 ,
-  l1 ,
-  l2 ,
-  a1 ,
-  a2 ,
-  vip1 ,
-  vip2 ,
-  c5 ,
-  c2 ,
-  c1 ,
-  b3 ,
-  b2 ,
-  b1 ,
-  grada 
-);
+    })(regions[regionName]);
+}
 
-  
 }//fin iff Estadio Águilas del Zulia
 
 
@@ -200,6 +209,7 @@ if ($('#estadio_magallanes').length == 1) { //Estadio Navegantes del Magallanes
   var grada2 = rsr.path("M 698.62157,528.38013 C 636.00092,458.92639 546.17776,428.34079 441.03267,422.8192 l -2.52538,62.62946 c 86.13804,8.06843 160.18054,37.24022 222.23356,90.91373 z").attr({id: 'grada2',parent: 'layer1',display: 'inline',opacity: '0.94499966',fill: '#cccccc',"fill-opacity": '1',"fill-rule": 'evenodd',stroke: 'none','stroke-width':'1','stroke-opacity':'1',"stroke-width": '1',"stroke-linecap": 'butt',"stroke-linejoin": 'miter',"stroke-opacity": '1'}).transform("t0,-410.36242").data('id', 'grada2');
     layer1.attr({'id': 'layer1','name': 'layer1'});layer1.transform("t0,-410.36242");
 
+    vip1.node.id = 'vip1';
 
 var rsrGroups = [layer1];
 layer1.push(
