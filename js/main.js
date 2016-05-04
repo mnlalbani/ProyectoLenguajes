@@ -128,41 +128,20 @@ $(document).ajaxComplete(function(){
    });
 
    
-   $('#nombre, #apellido').on('change keyup paste click',function(){
-      if ($(this).val().length > 20) {
+
+   //Muestra de Errores de longitud en formulario
+   $('input').on('change keyup paste click',function(){
+      if (($(this).val().length) == ($(this).attr('maxlength'))) {
          $(this).addClass('inputText-error');
-         $(this).closest('div', '.contenedorCampo').find('div','.errorText').css('visibility','visible').text('No puede ser mayor a 20 caracteres');
+         $(this).closest('div', '.contenedorCampo').find('div','.errorText').css('visibility','visible').text('No puede ser mayor a '+($(this).attr('maxlength') - 1)+' caracteres');
+         $('#imprimir').prop('disabled',true);
          return false;
       }
-      if ($(this).val().length < 20) {
+      if (($(this).val().length) < ($(this).attr('maxlength'))) {
          $(this).removeClass('inputText-error');
          $(this).closest('div', '.contenedorCampo').find('div','.errorText').css('visibility','hidden');
+         $('#imprimir').prop('disabled',false);
          return false;
       }      
    });
-   $('#telefono').on('change keyup paste click',function(){
-      if ($('#telefono').val().length > 11) {
-         $(this).addClass('inputText-error');
-         $(this).closest('div', '.contenedorCampo').find('div','.errorText').css('visibility','visible').text('No puede ser mayor a 11 dígitos');
-         return false;
-      }
-      if ($('#telefono').val().length < 11) {
-         $(this).removeClass('inputText-error');
-         $(this).closest('div', '.contenedorCampo').find('div','.errorText').css('visibility','hidden');
-         return false;
-      }
-   });
-   $('#cedula').on('change keyup paste click',function(){
-      if ($('#cedula').val().length > 8) {
-         $(this).addClass('inputText-error');
-         $(this).closest('div', '.contenedorCampo').find('div','.errorText').css('visibility','visible').text('No puede ser mayor a 8 dígitos');
-         return false;
-      }
-      if ($('#cedula').val().length < 9) {
-         $(this).removeClass('inputText-error');
-         $(this).closest('div', '.contenedorCampo').find('div','.errorText').css('visibility','hidden');
-         return false;
-      }
-   });
-
 });

@@ -29,22 +29,22 @@
 
 				<div class="contenedorCampo">
 					<label for="cedula">C.I.: </label>
-						<input type="text" class="inputText" name="cedula"id="cedula" placeholder="Cédula" onkeypress="validar_cedula()" required ></input>
+						<input type="text" class="inputText" name="cedula"id="cedula" placeholder="Cédula" onkeypress="validar_cedula()" required maxlength="9"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="nombre">Nombre:</label>
-						<input type="text" class="inputText" name="nombre" id="nombre" placeholder="Nombre" onkeypress="validar_nombre()"></input>
+						<input type="text" class="inputText" name="nombre" id="nombre" placeholder="Nombre" onkeypress="validar_nombre()" maxlength="20"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="apellido">Apellido:</label>
-						<input type="text" class="inputText" name="apellido" id="apellido" placeholder="Apellido" onkeypress="validar_nombre()" required></input>
+						<input type="text" class="inputText" name="apellido" id="apellido" placeholder="Apellido" onkeypress="validar_nombre()" required maxlength="20"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="telefono">Teléfono:</label>
-						<input type="tel" class="inputText" name="telefono" id="telefono" placeholder="Teléfono" onkeypress="validar_telefono()" required></input>
+						<input type="tel" class="inputText" name="telefono" id="telefono" placeholder="Teléfono" onkeypress="validar_telefono()" required maxlength="12"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
@@ -53,7 +53,7 @@
 						<div class="errorText">error</div>
 				</div>
 				<div class="buttonContainer">
-					<button class="button" type="submit">Imprimir</button>
+					<button class="button" id="imprimir" type="submit">Imprimir</button>
 					<button class="button" type="reset">Reiniciar</button>
 					<div id="response"></div>
 				</div>
