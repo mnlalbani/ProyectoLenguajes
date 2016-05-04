@@ -6,11 +6,8 @@ function validar_nombre(){
 		}
 		return false;
 }
-
-
-
 function validar_cedula(){
-   var x = event.which || x.keyCode;
+   var x = event.which || event.keyCode;
 	if (x < 48 || x > 57 ){
 		event.returnValue = false;
 	}
@@ -18,7 +15,7 @@ function validar_cedula(){
 }
 
 function validar_telefono(){
-   var x = event.which || x.keyCode;
+   var x = event.which || event.keyCode;
 	if (x < 48 || x > 57) {
 		event.returnValue = false;
 	}
