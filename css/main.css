@@ -156,6 +156,145 @@ label{
 	font-weight: 500;
 	text-transform: uppercase;
 }
+/*Leyenda*/
+.leyenda{
+	width: 96.9%;
+	height: 210px;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	background-color: #ffffff;
+
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+/*Tabla leyenda*/
+.tablaLeyenda{
+	width: 100%;
+	text-align: left;
+}
+.tablaLeyenda th, td{
+	border-bottom: solid 1px #f1f1f1;
+	padding-left: 20px;
+}
+.tablaLeyenda th{
+	height: 50px;
+	font-weight: 500;
+}
+.tablaLeyenda td{
+	height: 30px;
+}
+.tablaLeyendaMagallanes th{
+	height: 40px;
+}
+.tablaLeyendaMagallanes td{
+	height: 25px;
+}
+.tablaLeyenda div{
+	width: 20px;
+	height: 20px;
+}
+.tablaLeyenda td:nth-child(odd){
+	width: 25px;
+}
+/*.tablaLeyenda tr:last-child td:last-child{
+	border-bottom: 0;
+}*/
+/*Leyenda Estadio Bravos*/
+.tablaLeyenda.tablaLeyendaBravos .Grada{
+	background-color: #e99523;
+}
+.tablaLeyenda.tablaLeyendaBravos .SillaInferior{
+	background-color: #009688;
+}
+.tablaLeyenda.tablaLeyendaBravos .LateralSuperior{
+	background-color: #5da35a;
+}
+.tablaLeyenda.tablaLeyendaBravos .SillaSuperior{
+	background-color: #ad1d29;
+}
+.tablaLeyenda.tablaLeyendaBravos .LateralInferior{
+	background-color: #2c337a;
+}
+.tablaLeyenda.tablaLeyendaBravos .Vip{
+	background-color: #81b2b9;
+}
+/*Leyenda Estadio Águilas*/
+.tablaLeyenda.tablaLeyendaAguilas .Grada{
+	background-color: #cccccc;
+}
+.tablaLeyenda.tablaLeyendaAguilas .SillaArriba{
+	background-color: #ad1d29;
+}
+.tablaLeyenda.tablaLeyendaAguilas .LateralSuperior{
+	background-color: #5da35a;
+}
+.tablaLeyenda.tablaLeyendaAguilas .LateralInferior{
+	background-color: #e99523;
+}
+.tablaLeyenda.tablaLeyendaAguilas .Vip{
+	background-color: #81b2b9;
+}
+.tablaLeyenda.tablaLeyendaAguilas .Oficial{
+	background-color: #000000;
+}
+.tablaLeyenda.tablaLeyendaAguilas .TribunaEconomica{
+	background-color: #2c337a;
+}
+/*Leyenda Estadio Magallanes*/
+.tablaLeyenda.tablaLeyendaMagallanes .TribunaCentral{
+	background-color: #ad1d29;
+}
+.tablaLeyenda.tablaLeyendaMagallanes .Palco{
+	background-color: #009688;
+}
+.tablaLeyenda.tablaLeyendaMagallanes .TribunaLateral{
+	background-color: #2c337a;
+}
+.tablaLeyenda.tablaLeyendaMagallanes .TribunaPrincipal{
+	background-color: #5da35a;
+}
+.tablaLeyenda.tablaLeyendaMagallanes .Vip{
+	background-color: #81b2b9;	
+}
+.tablaLeyenda.tablaLeyendaMagallanes .LateralBajo{
+	background-color: #805e52;
+}
+.tablaLeyenda.tablaLeyendaMagallanes .Terreno{
+	background-color: #9c27b0;
+}
+.tablaLeyenda.tablaLeyendaMagallanes .TribunaPreferencial{
+	background-color: #e99523;
+}
+.tablaLeyenda.tablaLeyendaMagallanes .Grada{
+	background-color: #cccccc;
+}
+/*Leyenda Estadio Leones*/
+.tablaLeyenda.tablaLeyendaLeones .Grada{
+	background-color: #cccccc;
+}
+.tablaLeyenda.tablaLeyendaLeones .SillaSuperior{
+	background-color: #ad1d29;
+}
+.tablaLeyenda.tablaLeyendaLeones .SillaInferior{
+	background-color: #81b2b9;
+}
+.tablaLeyenda.tablaLeyendaLeones .Palco{
+	background-color: #9c27b0;
+}
+.tablaLeyenda.tablaLeyendaLeones .Terreno{
+	background-color: #009688;	
+}
+.tablaLeyenda.tablaLeyendaLeones .TribunaLateralA{
+	background-color: #e99523;
+}
+.tablaLeyenda.tablaLeyendaLeones .TribunaLateralB{
+	background-color: #2c337a;
+}
+.tablaLeyenda.tablaLeyendaLeones .TribunaLateralC{
+	background-color: #5da35a;
+}
 /* Página Administración */
 
 .track, .resumen{
@@ -181,6 +320,21 @@ label{
 	text-transform: uppercase;
 	font-weight: 500;
 }
+
+/*--Pagina Resumen--*/
+.containerResumen{
+	width: 96.9%;
+	height: 642px;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	background-color: #ffffff;	
+
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
 /*Botones y Formulario*/
 .errorText{
 	visibility: hidden;
@@ -259,18 +413,4 @@ input:placeholder-shown{
 
 .buttonContainer{
 	text-align:center;
-}
-
-/*--Pagina Resumen--*/
-.containerResumen{
-	width: 96.9%;
-	height: 642px;
-	float: left;
-	margin-bottom: 10px;
-	margin-left: 20px;
-	background-color: #ffffff;	
-
-	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }

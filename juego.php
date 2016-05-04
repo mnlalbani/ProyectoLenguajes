@@ -59,6 +59,35 @@
 				</div>
 			</form>
 		</div>
+		<div class="leyenda">
+			<table class="tablaLeyenda tablaLeyendaAguilas">
+				<tr>
+					<th colspan='4'><p class="headerText">Leyenda</p></th>
+				</tr>
+				<tr>
+					<td><div class="Grada"></div></td>
+					<td>Grada</td>
+					<td><div class="SillaArriba"></div></td>
+					<td>Sillas Arriba</td>
+				</tr>
+				<tr>
+					<td><div class="LateralSuperior"></div></td>
+					<td>Lateral Superior</td>
+					<td><div class="LateralInferior"></div></td>
+					<td>Lateral Inferior</td>
+				</tr>
+				<tr>
+					<td><div class="Oficial"></div></td>
+					<td>Oficial</td>
+					<td><div class="TribunaEconomica"></div></td>
+					<td>Tribuna Económica</td>
+				</tr>
+				<tr>
+					<td><div class="Vip"></div></td>
+					<td colspan="4">Vip</td>
+				</tr>
+			</table>	
+		</div>
 </div>
 
 <div class="containerJuego2">
@@ -113,6 +142,41 @@
 					<button class="button" type="reset">Reiniciar</button>
 				</div>
 			</form>
+		</div>
+		<div class="leyenda">
+			<table class="tablaLeyenda tablaLeyendaMagallanes">
+				<tr>
+					<th colspan='4'><p class="headerText">Leyenda</p></th>
+				</tr>
+				<tr>
+					<td><div class="TribunaCentral"></div></td>
+					<td>Tribuna Central</td>
+					<td><div class="Palco"></div></td>
+					<td>Palco</td>
+				</tr>
+				<tr>
+					<td><div class="TribunaLateral"></div></td>
+					<td>Tribunas Laterales</td>
+					<td><div class="TribunaPrincipal"></div></td>
+					<td>Tribuna Principal</td>
+				</tr>
+				<tr>
+					<td><div class="Vip"></div></td>
+					<td>Vip</td>
+					<td><div class="LateralBajo"></div></td>
+					<td>Lateral Bajo</td>
+				</tr>
+				<tr>
+					<td><div class="Terreno"></div></td>
+					<td>Terreno</td>
+					<td><div class="TribunaPreferencial"></div></td>
+					<td>Tribuna Preferencial</td>
+				</tr>
+				<tr>
+					<td><div class="Grada"></div></td>
+					<td>Grada</td>
+				</tr>
+			</table>	
 		</div>
 </div>
 
@@ -169,6 +233,37 @@
 				</div>
 			</form>
 		</div>
+		<div class="leyenda">
+			<table class="tablaLeyenda tablaLeyendaLeones">
+				<tr>
+					<th colspan='4'><p class="headerText">Leyenda</p></th>
+				</tr>
+				<tr>
+					<td><div class="SillaSuperior"></div></td>
+					<td>Sillas Superiores</td>
+					<td><div class="SillaInferior"></div></td>
+					<td>Sillas Inferiores</td>
+				</tr>
+				<tr>
+					<td><div class="TribunaLateralA"></div></td>
+					<td>Tribuna Lateral A</td>
+					<td><div class="TribunaLateralB"></div></td>
+					<td>Tribuna Lateral B</td>
+				</tr>
+				<tr>
+					<td><div class="TribunaLateralC"></div></td>
+					<td>Tribuna Lateral C</td>
+					<td><div class="Grada"></div></td>
+					<td>Grada</td>
+				</tr>
+				<tr>
+					<td><div class="Terreno"></div></td>
+					<td>Terreno</td>
+					<td><div class="Palco"></div></td>
+					<td>Palco</td>
+				</tr>
+			</table>	
+		</div>
 </div>
 
 <div class="containerJuego4">
@@ -223,6 +318,31 @@
 					<button class="button" type="reset">Reiniciar</button>
 				</div>
 			</form>
+		</div>
+		<div class="leyenda">
+			<table class="tablaLeyenda tablaLeyendaBravos">
+				<tr>
+					<th colspan='4'><p class="headerText">Leyenda</p></th>
+				</tr>
+				<tr>
+					<td><div class="Grada"></div></td>
+					<td>Grada</td>
+					<td><div class="SillaInferior"></div></td>
+					<td>Sillas Inferiores</td>
+				</tr>
+				<tr>
+					<td><div class="LateralInferior"></div></td>
+					<td>Lateral Inferior</td>
+					<td><div class="Vip"></div></td>
+					<td>Vip</td>
+				</tr>
+				<tr>
+					<td><div class="LateralSuperior"></div></td>
+					<td>Lateral Superior</td>
+					<td><div class="SillaSuperior"></div></td>
+					<td>Sillas Superiores</td>
+				</tr>
+			</table>	
 		</div>
 </div>
 
