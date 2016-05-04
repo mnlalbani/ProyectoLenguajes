@@ -30,22 +30,27 @@
 				<div class="contenedorCampo">
 					<label for="cedula">C.I.: </label>
 						<input type="text" class="inputText" name="cedula"id="cedula" placeholder="Cédula" onkeypress="validar_cedula()" required ></input>
+						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="nombre">Nombre:</label>
-						<input type="text" class="inputText" name="nombre" id="nombre" placeholder="Nombre" onkeypress="validar_nombre()" required></input>
+						<input type="text" class="inputText" name="nombre" id="nombre" placeholder="Nombre" onkeypress="validar_nombre()"></input>
+						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="apellido">Apellido:</label>
 						<input type="text" class="inputText" name="apellido" id="apellido" placeholder="Apellido" onkeypress="validar_nombre()" required></input>
+						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="telefono">Teléfono:</label>
 						<input type="tel" class="inputText" name="telefono" id="telefono" placeholder="Teléfono" onkeypress="validar_telefono()" required></input>
+						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="correo">Correo:</label>
 						<input type="email" class="inputText" name="correo" id="correo" placeholder="Correo" required></input>
+						<div class="errorText">error</div>
 				</div>
 				<div class="buttonContainer">
 					<button class="button" type="submit">Imprimir</button>
@@ -213,10 +218,11 @@
 		</div>
 		<div class="resumen">
 			<p>Resumen de Ventas</p>
-			<button  class="button" >Generar Resumen</button>
-			<div id="responseResumen"></div>
+			<button  class="button" id="gResumen">Generar Resumen</button>
 		</div>
 </div>
-
+<div class="containerResumen">
+	
+</div>
 </body>
 </html>

@@ -1,56 +1,30 @@
 //Validación formulario
 function validar_nombre(){
-	if(document.getElementById('nombre').value.length > 19){
-		alert('Nombre no puede ser mayor a 20 caracteres');
-		document.getElementById('nombre').value = "";
-		return false;
-	}
-		if ((event.keyCode < 97 || event.keyCode > 122) && (event.keyCode < 65 || event.keyCode > 90) && (event.keyCode != 32) && (event.keyCode!=241)) {
+      var x = event.which || event.keyCode;
+		if ((x < 97 || x > 122) && (x < 65 || x > 90) && (x != 32) && (x!=241)) {
 			event.returnValue = false;
 		}
 		return false;
 }
 
+
+
 function validar_cedula(){
-	if(document.getElementById('cedula').value.length > 7){
-		alert('Cédula no puede ser mayor a 8 dígitos');
-		document.getElementById('cedula').value = "";
-		return false;
-	}
-	if (event.keyCode < 48 || event.keyCode > 57 ){
+   var x = event.which || x.keyCode;
+	if (x < 48 || x > 57 ){
 		event.returnValue = false;
 	}
 	return false;
 }
 
 function validar_telefono(){
-	if (document.getElementById('telefono').value.length > 10) {
-		alert('Teléfono no puede ser mayor a 11 dígitos');
-		document.getElementById('telefono').value = "";
-		return false;
-	}
-	if (event.keyCode < 48 || event.keyCode > 57) {
+   var x = event.which || x.keyCode;
+	if (x < 48 || x > 57) {
 		event.returnValue = false;
 	}
 	return false;
 }
 //Fin validación formulario
-
-//Imprimir
-/*function imprimir(){
-			var cedula = document.getElementById("cedula").value;
-			var nombre = document.getElementById("nombre").value;
-			var apellido = document.getElementById("apellido").value;
-			var telefono = document.getElementById("telefono").value;
-			var correo = document.getElementById("correo").value;
-			var equipos = document.getElementById("equipo_1").value +' vs '+ document.getElementById('equipo_2').value;
-			var hora = document.getElementById("hora").value;
-			var lugar = document.getElementById("lugar").value;
-			var precio = document.getElementById("costo").value;
-
-			alert("Datos de Juego Y Ticket \n "+equipos+"\n"+hora+"\n"+lugar+"\n"+precio+" \nCliente: \nC.I: "+cedula+"\nNombre: "+nombre+"\nApellido: "+apellido+"\nTelefono: "+telefono+"\nCorreo: "+correo);
-}*/
-//Fin imprimir
 $(document).ready(function(){
 	$('.container').load('juego.php .containerJuego1'); //carga el juego 1 al abrir la aplicación
 	$('#juego1 a').attr('class','active'); //agrega la clase 'active' al elemento 1 del nav
@@ -101,6 +75,11 @@ $(document).ready(function(){
    		$('#juego4 a').attr('class', 'inactive');
    		return false;
    });
+
+
+
+
+
 });
 
 $(document).ajaxComplete(function(){
@@ -139,6 +118,47 @@ $(document).ajaxComplete(function(){
          $("form").trigger("reset");
          $('#response').html(data);
       });
+   });
+
+
+   $('#gResumen').unbind('click');
+   $('#gResumen').on('click',function(){
+      console.log("hola");
+      $('.container').load('juego.php .containerResumen');
+   });
+
+   
+   $('#nombre, #apellido').on('change keyup paste click',function(){
+      if ($(this).val().length > 19) {
+         $(this).addClass('inputText-error');
+         $(this).closest('div', '.contenedorCampo').find('div','.errorText').css('visibility','visible').text('No puede ser mayor a 20 caracteres.');
+         return false;
+      }
+      if ($(this).val().length < 19) {
+         $(this).removeClass('inputText-error');
+         $(this).closest('div', '.contenedorCampo').find('div','.errorText').css('visibility','hidden');
+         return false;
+      }      
+   });
+   $('#telefono').on('change keyup paste click',function(){
+      if ($('#telefono').val().length > 11) {
+         $(this).addClass('inputText-error');
+         return false;
+      }
+      if ($('#telefono').val().length < 11) {
+         $(this).removeClass('inputText-error');
+         return false;
+      }
+   });
+   $('#cedula').on('change keyup paste click',function(){
+      if ($('#cedula').val().length > 8) {
+         $(this).addClass('inputText-error');
+         return false;
+      }
+      if ($('#cedula').val().length < 9) {
+         $(this).removeClass('inputText-error');
+         return false;
+      }
    });
 
 });
