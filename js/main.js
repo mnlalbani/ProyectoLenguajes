@@ -73,13 +73,10 @@ $(document).ready(function(){
    		return false;
    });
 
-
-
-
-
 });
 
 $(document).ajaxComplete(function(){
+
     $('form').attr('autocomplete', 'off');  //agrega el atributo autcomplete='off' a todos los formularios luego de ser cargados por ajax 
 
    $('#aguilasCardenales').unbind('submit');
@@ -127,6 +124,7 @@ $(document).ajaxComplete(function(){
    
 
    //Muestra de Errores de longitud en formulario
+   $('input').unbind('change keyup paste click');
    $('input').on('change keyup paste click',function(){
       if (($(this).val().length) == ($(this).attr('maxlength'))) {
          $(this).addClass('inputText-error');

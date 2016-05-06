@@ -17,8 +17,8 @@
 				<input type="text" value="06:00pm" name="hora" id="hora" hidden></input>
 				<p>Luis Aparicio El Grande</p>
 				<input type="text" value="Luis Aparicio El Grande" id="lugar" name="lugar" hidden></input>
-				<p>Valor</p>
-				<input type="text" value="200" id="costo" name="valor" hidden></input>
+				<p>precio</p>
+				<input type="text" value="200" id="precio" name="precio" hidden></input>
 				<hr>
 					<p id="zonaAsiento">Zona Asiento</p>
 					<input type="text" name="zonaElegida" id="zonaElegida" hidden >
@@ -102,8 +102,8 @@
 				<input type="text" value="06:00pm" id="hora" hidden name="hora"></input>
 				<p>Estadio José Bernardo Pérez</p>
 				<input type="text" value="Estadio José Bernardo Pérez" id="lugar" hidden name="lugar"></input>
-				<p>Valor</p>
-				<input type="text" value="200" id="costo" hidden name="valor"></input>
+				<p>precio</p>
+				<input type="text" value="200" id="precio" hidden name="precio"></input>
 				<hr>
 					<p id="zonaAsiento">Zona Asiento</p>
 					<input type="text" name="zonaElegida" id="zonaElegida" hidden >
@@ -114,22 +114,22 @@
 
 				<div class="contenedorCampo">
 					<label for="cedula">C.I.: </label>
-						<input type="text" class="inputText" name="cedula"id="cedula" placeholder="Cédula" onkeypress="validar_cedula()" required ></input>
+						<input type="text" class="inputText" name="cedula"id="cedula" placeholder="Cédula" onkeypress="validar_cedula()" required maxlength="9"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="nombre">Nombre:</label>
-						<input type="text" class="inputText" name="nombre" id="nombre" placeholder="Nombre" onkeypress="validar_nombre()" required></input>
+						<input type="text" class="inputText" name="nombre" id="nombre" placeholder="Nombre" onkeypress="validar_nombre()" maxlength="20"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="apellido">Apellido:</label>
-						<input type="text" class="inputText" name="apellido" id="apellido" placeholder="Apellido" onkeypress="validar_nombre()" required></input>
+						<input type="text" class="inputText" name="apellido" id="apellido" placeholder="Apellido" onkeypress="validar_nombre()" required maxlength="20"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="telefono">Teléfono:</label>
-						<input type="tel" class="inputText" name="telefono" id="telefono" placeholder="Teléfono" onkeypress="validar_telefono()" required></input>
+						<input type="tel" class="inputText" name="telefono" id="telefono" placeholder="Teléfono" onkeypress="validar_telefono()" required maxlength="12"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
@@ -140,6 +140,7 @@
 				<div class="buttonContainer">
 					<button class="button" type="submit" id="imprimir">Imprimir</button>
 					<button class="button" type="reset">Reiniciar</button>
+					<div id="response"></div>
 				</div>
 			</form>
 		</div>
@@ -174,7 +175,7 @@
 				</tr>
 				<tr>
 					<td><div class="Grada"></div></td>
-					<td>Grada</td>
+					<td colspan="4">Grada</td>
 				</tr>
 			</table>	
 		</div>
@@ -192,8 +193,8 @@
 				<input type="text" value="06:00pm" id="hora" hidden name="hora"></input>
 				<p>Estadio Universitario de Caracas</p>
 				<input type="text" value="Estadio Universitario de Caracas" id="lugar" hidden name="lugar"></input>
-				<p>Valor</p>
-				<input type="text" value="200" id="costo" hidden name="valor"></input>
+				<p>precio</p>
+				<input type="text" value="200" id="precio" hidden name="precio"></input>
 				<hr>
 					<p id="zonaAsiento">Zona Asiento</p>
 					<input type="text" name="zonaElegida" id="zonaElegida" hidden >
@@ -204,22 +205,22 @@
 
 				<div class="contenedorCampo">
 					<label for="cedula">C.I.: </label>
-						<input type="text" class="inputText" name="cedula"id="cedula" placeholder="Cédula" onkeypress="validar_cedula()" required ></input>
+						<input type="text" class="inputText" name="cedula"id="cedula" placeholder="Cédula" onkeypress="validar_cedula()" required maxlength="9"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="nombre">Nombre:</label>
-						<input type="text" class="inputText" name="nombre" id="nombre" placeholder="Nombre" onkeypress="validar_nombre()" required></input>
+						<input type="text" class="inputText" name="nombre" id="nombre" placeholder="Nombre" onkeypress="validar_nombre()" maxlength="20"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="apellido">Apellido:</label>
-						<input type="text" class="inputText" name="apellido" id="apellido" placeholder="Apellido" onkeypress="validar_nombre()" required></input>
+						<input type="text" class="inputText" name="apellido" id="apellido" placeholder="Apellido" onkeypress="validar_nombre()" required maxlength="20"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="telefono">Teléfono:</label>
-						<input type="tel" class="inputText" name="telefono" id="telefono" placeholder="Teléfono" onkeypress="validar_telefono()" required></input>
+						<input type="tel" class="inputText" name="telefono" id="telefono" placeholder="Teléfono" onkeypress="validar_telefono()" required maxlength="12"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
@@ -228,8 +229,9 @@
 						<div class="errorText">error</div>
 				</div>
 				<div class="buttonContainer">
-					<button class="button" type="submit">Imprimir</button>
+					<button class="button" type="submit" id="imprimir">Imprimir</button>
 					<button class="button" type="reset">Reiniciar</button>
+					<div id="response"></div>
 				</div>
 			</form>
 		</div>
@@ -278,8 +280,8 @@
 				<input type="text" value="06:00pm" id="hora" hidden name="hora"></input>
 				<p>Stadium Nueva Esparta</p>
 				<input type="text" value="Stadium Nueva Esparta" id="lugar" hidden name="lugar"></input>
-				<p>Valor</p>
-				<input type="text" value="200" id="costo" hidden name="valor"></input>
+				<p id="precioZona">Precio</p>
+				<input type="text"  id="precio" hidden name="precio"></input>
 				<hr>
 					<p id="zonaAsiento">Zona Asiento</p>
 					<input type="text" name="zonaElegida" id="zonaElegida" hidden >
@@ -290,22 +292,22 @@
 
 				<div class="contenedorCampo">
 					<label for="cedula">C.I.: </label>
-						<input type="text" class="inputText" name="cedula"id="cedula" placeholder="Cédula" onkeypress="validar_cedula()" required ></input>
+						<input type="text" class="inputText" name="cedula"id="cedula" placeholder="Cédula" onkeypress="validar_cedula()" required maxlength="9"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="nombre">Nombre:</label>
-						<input type="text" class="inputText" name="nombre" id="nombre" placeholder="Nombre" onkeypress="validar_nombre()" required></input>
+						<input type="text" class="inputText" name="nombre" id="nombre" placeholder="Nombre" onkeypress="validar_nombre()" maxlength="20"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="apellido">Apellido:</label>
-						<input type="text" class="inputText" name="apellido" id="apellido" placeholder="Apellido" onkeypress="validar_nombre()" required></input>
+						<input type="text" class="inputText" name="apellido" id="apellido" placeholder="Apellido" onkeypress="validar_nombre()" required maxlength="20"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
 					<label for="telefono">Teléfono:</label>
-						<input type="tel" class="inputText" name="telefono" id="telefono" placeholder="Teléfono" onkeypress="validar_telefono()" required></input>
+						<input type="tel" class="inputText" name="telefono" id="telefono" placeholder="Teléfono" onkeypress="validar_telefono()" required maxlength="12"></input>
 						<div class="errorText">error</div>
 				</div>
 				<div class="contenedorCampo">
@@ -316,6 +318,7 @@
 				<div class="buttonContainer">
 					<button class="button" type="submit" id="imprimir">Imprimir</button>
 					<button class="button" type="reset">Reiniciar</button>
+					<div id="response"></div>
 				</div>
 			</form>
 		</div>
