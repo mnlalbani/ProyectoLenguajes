@@ -17,7 +17,7 @@
 				<input type="text" value="06:00pm" name="hora" id="hora" hidden></input>
 				<p>Luis Aparicio El Grande</p>
 				<input type="text" value="Luis Aparicio El Grande" id="lugar" name="lugar" hidden></input>
-				<p>precio</p>
+				<p id="precioZona">Precio</p>
 				<input type="text" value="200" id="precio" name="precio" hidden></input>
 				<hr>
 					<p id="zonaAsiento">Zona Asiento</p>
@@ -102,7 +102,7 @@
 				<input type="text" value="06:00pm" id="hora" hidden name="hora"></input>
 				<p>Estadio José Bernardo Pérez</p>
 				<input type="text" value="Estadio José Bernardo Pérez" id="lugar" hidden name="lugar"></input>
-				<p>precio</p>
+				<p id="precioZona">Precio</p>
 				<input type="text" value="200" id="precio" hidden name="precio"></input>
 				<hr>
 					<p id="zonaAsiento">Zona Asiento</p>
@@ -193,7 +193,7 @@
 				<input type="text" value="06:00pm" id="hora" hidden name="hora"></input>
 				<p>Estadio Universitario de Caracas</p>
 				<input type="text" value="Estadio Universitario de Caracas" id="lugar" hidden name="lugar"></input>
-				<p>precio</p>
+				<p id="precioZona">Precio</p>
 				<input type="text" value="200" id="precio" hidden name="precio"></input>
 				<hr>
 					<p id="zonaAsiento">Zona Asiento</p>
