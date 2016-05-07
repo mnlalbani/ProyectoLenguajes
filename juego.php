@@ -373,16 +373,47 @@
 	<div class="nav navResumen">
 			<ul>
 				<li id="juego1"><a href="">Salir</a></li>
-
 				<li id="administracion"><a href="">Administración</a></li>
 			</ul>
 	</div>	
 	<div class="fondoResumen">
 		<div class="sideNav">
-			
+			<h1>Juegos</h1>
+			<ul>
+				<li><a href="">Aguilas vs Cardenales</a></li>
+				<li><a href="">Magallanes vs Tiburones</a></li>
+				<li><a href="">Leones vs Caribes</a></li>
+				<li><a href="">Bravos vs Tigres</a></li>
+			</ul>
 		</div>
 		<div class="contenedorTablaResumen">
-			<table class="tablaResumen tablaLeyenda"></table>
+			<table class="tablaLeyenda tablaResumen">
+				<tr>
+					<th colspan="7"><p class="headerText">Resumen De Ventas</p></th>
+				</tr>
+				<tr>
+					<th>Ticked ID</th>
+					<th>Juego</th>
+					<th>Cedula</th>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Teléfono</th>
+					<th>Correo</th>
+				</tr>
+				<?php 
+
+				include("php/connection.php");
+
+
+				$sql = "SELECT * FROM ticket";
+				$result = $mysqli->query($sql);
+
+				while($row = mysqli_fetch_array($result)) {
+					echo "<tr class='trBorder'><td class='widthTicketid'>".$row['ticketid']."</td><td>".$row['equipo_1']."</td><td>".$row['cedula']."</td><td>".$row['nombre']."</td><td>".$row['apellido']."</td><td>".$row['telefono']."</td></tr>";
+				}
+
+				 ?>
+			</table>	
 		</div>
 	</div>
 </div>

@@ -63,6 +63,7 @@ $(document).ready(function(){
    		$('#administracion a').attr('class', 'inactive');
    		return false;
    });
+   $('#administracion a').unbind('click');
    $('#administracion a').click(function(){
    		$('.container').load('juego.php .containerAdministracion');
    		$(this).attr('class', 'active');
@@ -120,7 +121,7 @@ $(document).ajaxComplete(function(){
       //console.log("hola");
       e.preventDefault();
       $('body').load('juego.php .containerResumen',function(){
-         $('#administracion a').attr('class', 'active');   
+         $('#administracion a').attr('class', 'active'); 
       });
    });
 
