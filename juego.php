@@ -368,8 +368,24 @@
 			<button  class="button" id="gResumen">Generar Resumen</button>
 		</div>
 </div>
+
 <div class="containerResumen">
-	
+	<div class="nav navResumen">
+			<ul>
+				<li id="juego1"><a href="">Salir</a></li>
+
+				<li id="administracion"><a href="">Administración</a></li>
+			</ul>
+	</div>	
+	<div class="fondoResumen">
+		<div class="sideNav">
+			
+		</div>
+		<div class="contenedorTablaResumen">
+			<table class="tablaResumen tablaLeyenda"></table>
+		</div>
+	</div>
 </div>
+
 </body>
 </html>

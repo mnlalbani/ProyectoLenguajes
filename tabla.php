@@ -43,7 +43,7 @@
 				$result = $mysqli->query($sql);
 
 				while($row = mysqli_fetch_array($result)) {
-					echo "<tr><td>".$row['ticketid']."</td><td>".$row['equipo_1']."</td><td>".$row['cedula']."</td><td>".$row['nombre']."</td><td>".$row['apellido']."</td><td>".$row['telefono']."</td></tr>";
+					echo "<tr class='trBorder'><td>".$row['ticketid']."</td><td>".$row['equipo_1']."</td><td>".$row['cedula']."</td><td>".$row['nombre']."</td><td>".$row['apellido']."</td><td>".$row['telefono']."</td></tr>";
 				}
 
 				 ?>

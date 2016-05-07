@@ -116,9 +116,12 @@ $(document).ajaxComplete(function(){
 
 
    $('#gResumen').unbind('click');
-   $('#gResumen').on('click',function(){
-      console.log("hola");
-      $('.container').load('juego.php .containerResumen');
+   $('#gResumen').on('click',function(e){
+      //console.log("hola");
+      e.preventDefault();
+      $('body').load('juego.php .containerResumen',function(){
+         $('#administracion a').attr('class', 'active');   
+      });
    });
 
    
