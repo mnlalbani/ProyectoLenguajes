@@ -11,7 +11,7 @@
 	<title>Reserva Estadio</title>
 </head>
 <body>
-		<div class="nav">
+		<div class="nav navDisplay">
 			<ul>
 				<li id="juego1"><a href="">Aguilas vs Cardenales</a></li>
 				<li id="juego2"><a href="">Magallanes vs Tiburones</a></li>

@@ -120,13 +120,25 @@ $(document).ajaxComplete(function(){
    $('#gResumen').unbind('click');
    $('#gResumen').on('click',function(e){
       //console.log("hola");
-      e.preventDefault();
-      $('body').load('juego.php .containerResumen',function(){
-         $('#administracion a').attr('class', 'active'); 
+      e.preventDefault();      
+      $('.container').load('juego.php .containerResumen',function(){
+         $('.navDisplay').hide();
       });
    });
 
-   
+   $('#volver a').unbind('click');
+   $('#volver a').click(function(){
+         console.log('click');
+         $('.navDisplay').show();
+         $('.container').load('juego.php .containerAdministracion');
+         $(this).attr('class', 'active');
+         $('#juego1 a').attr('class', 'inactive');
+         $('#juego2 a').attr('class', 'inactive');
+         $('#juego3 a').attr('class', 'inactive');
+         $('#juego4 a').attr('class', 'inactive');
+         return false;
+   });
+
 
    //Muestra de Errores de longitud en formulario
    $('input').unbind('change keyup paste click');
