@@ -86,13 +86,14 @@ $(document).ajaxComplete(function(){
       var details = $('#aguilasCardenales').serialize();
       $.post('php/registroTicket.php',details,function(data){
          $("form").trigger("reset");
-         var arr = JSON.parse(data);
-         if (arr.success == true) {
+         //var arr = JSON.parse(data);
+        /* if (arr.success == true) {
             $('#response').html(arr.message);
          }
          else{
             $('#response').html(arr.errors);
          }
+         */
       });
    });
 

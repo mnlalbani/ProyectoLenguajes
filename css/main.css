@@ -322,31 +322,35 @@ label{
 }
 
 /*--Pagina Resumen--*/
-/*
-.containerResumen{
-	width: 100%;
-	height: 642px;
-	float: left;
-	margin-bottom: 10px;
-	margin-left: 20px;
-	background-color: #ffffff;	
-
-	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-}
-*/
 .navResumen{
 	margin-bottom: 0px;
 }
 .fondoResumen{
 	color: white;
-	background-color: #00897B;
+background-color: #009688;
 
 	height: 200px;
 	
 	overflow: visible;
 
+}
+.headerResumen{
+	float: left;
+	overflow: hidden;
+	width: 100%;
+}
+
+.headerResumen h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-right: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .sideNav{	
 	border-left-color: #00897B;
@@ -354,7 +358,7 @@ label{
 	float: left;
 	padding-left: 20px;
 	margin-left: 20px;
-	margin-top: 220px;
+	margin-top: 170px;
 
 	color: #00897B;
 }
@@ -390,21 +394,50 @@ label{
 
 	margin-right: 20px;
 	margin-bottom: 10px;
-	margin-top: 120px;
+	margin-top: 40px;
 
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);	
 }
-.tablaResumen{
-	 border-collapse: collapse;
-}
 
-.tablaResumen  .trBorder{
-	border: solid 1px #f1f1f1;
+/*Tabla Resumen de Ventas*/
+.tablaResumen{
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
 }
-.widthTicketid{
-	width: 200%;
+.tablaResumen .headerTable{
+	height: 50px;
+	text-align: left;
+	padding-left: 20px;
+	font-weight: 400;
+	font-size: 20px;
+}
+.tablaResumen .nombreColumna{
+	font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #757575;
+	height: 40px;
+	text-align: left;
+	padding-left: 30px;
+}
+.tablaResumen tr{
+	height: 40px;
+
+}
+.tablaResumen td{
+	font-size: 16px;
+	font-weight: 400;
+	padding-right: 18px;
+	text-align: right;
+}
+.tablaResumen tr:hover:not(.filaNombre){
+	background-color: #eeeeee;
+}
+.tablaResumen .trBorder{
+	border: solid 1px #f1f1f1;
 }
 /*Botones y Formulario*/
 .errorText{

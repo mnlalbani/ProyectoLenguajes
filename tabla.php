@@ -20,34 +20,114 @@
 				<li id="administracion"><a href="">Administración</a></li>
 			</ul>
 		</div>
-		<div class="containerResumen">
-			<table class="tablaLeyenda tablaResumen">
-				<tr>
-					<th colspan="7"><p class="headerText">Resumen De Ventas</p></th>
+<div class="contenedorTablaResumen">
+			<table class="tablaResumen">
+				<tr class="filaNombre">
+					<th colspan="7"  class="headerTable"><p>Nombre del Juego</p></th>
+				</tr>
+				<tr class="filaNombre">
+					<th class="nombreColumna">Ticket ID</th>
+					<th class="nombreColumna">Cedula</th>
+					<th class="nombreColumna">Nombre</th>
+					<th class="nombreColumna">Apellido</th>
+					<th class="nombreColumna">Teléfono</th>
+					<th class="nombreColumna">Correo</th>
 				</tr>
 				<tr>
-					<th>Ticked ID</th>
-					<th>Juego</th>
-					<th>Cedula</th>
-					<th>Nombre</th>
-					<th>Apellido</th>
-					<th>Teléfono</th>
-					<th>Correo</th>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
 				</tr>
-				<?php 
+				<tr>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+				</tr>
+				<tr>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+				</tr>
+				<tr>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+				</tr>
+				<tr>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+				</tr>
+				<tr>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+				</tr>
+				<tr>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+				</tr>
+				<tr>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+				</tr>
+				<tr>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+				</tr>
+				<tr>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+					<td>Data de Prueba</td>
+				</tr>
+				<?php /*
 
-				include("php/connection.php");
+					include("php/connection.php");
 
 
-				$sql = "SELECT * FROM ticket";
-				$result = $mysqli->query($sql);
+					$sql = "SELECT * FROM ticket";
+					$result = $mysqli->query($sql);
 
-				while($row = mysqli_fetch_array($result)) {
-					echo "<tr class='trBorder'><td>".$row['ticketid']."</td><td>".$row['equipo_1']."</td><td>".$row['cedula']."</td><td>".$row['nombre']."</td><td>".$row['apellido']."</td><td>".$row['telefono']."</td></tr>";
-				}
+					while($row = mysqli_fetch_array($result)) {
+						echo "<tr class='trBorder'><td class='widthTicketid'>".$row['ticketid']."</td><td>".$row['equipo_1']."</td><td>".$row['cedula']."</td><td>".$row['nombre']."</td><td>".$row['apellido']."</td><td>".$row['telefono']."</td></tr>";
+					}
 
-				 ?>
+				 */ ?>
+
 			</table>	
-		</div>
+</div>
 </body>
 </html>
