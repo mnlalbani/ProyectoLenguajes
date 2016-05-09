@@ -372,7 +372,7 @@
 <div class="containerResumen">
 	<div class="nav navResumen">
 			<ul>
-				<li id="volver"><a href="">Volver</a></li>
+				<li id="volver"><a href=""><i class="material-icons">arrow_back</i>Volver</a></li>
 			</ul>
 	</div>	
 	<div class="fondoResumen">
