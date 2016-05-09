@@ -65,6 +65,7 @@
   display: inline-flex;
   vertical-align: middle;
   padding-bottom: 3px;
+  margin-right: 3px;
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
