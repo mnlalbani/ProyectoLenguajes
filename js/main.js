@@ -156,4 +156,11 @@ $(document).ajaxComplete(function(){
          return false;
       }      
    });
+   $('.sideNav a').unbind('click');
+   $('.sideNav a').on('click',function(e){
+      var juego = $(this).text();
+      $('#nombreJuego').text(juego);
+      e.preventDefault();
+      console.log("cambiado");
+   });
 });

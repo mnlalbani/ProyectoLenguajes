@@ -391,7 +391,7 @@
 		<div class="contenedorTablaResumen">
 			<table class="tablaResumen">
 				<tr class="filaNombre">
-					<th colspan="7"  class="headerTable"><p>Nombre del Juego</p></th>
+					<th colspan="7"  class="headerTable" ><p id="nombreJuego">Nombre del Juego</p></th>
 				</tr>
 				<tr class="filaNombre">
 					<th class="nombreColumna">Ticked ID</th>
@@ -401,102 +401,29 @@
 					<th class="nombreColumna">Teléfono</th>
 					<th class="nombreColumna">Correo</th>
 				</tr>
-				<tr>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-				</tr>
-				<tr>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-				</tr>
-				<tr>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-				</tr>
-				<tr>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-				</tr>
-				<tr>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-				</tr>
-				<tr>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-				</tr>
-				<tr>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-				</tr>
-				<tr>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-				</tr>
-				<tr>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-				</tr>
-				<tr>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-					<td>Data de Prueba</td>
-				</tr>
-				<?php /*
+				<?php 
 
 					include("php/connection.php");
 
 
-					$sql = "SELECT * FROM ticket";
+					$sql = "SELECT * FROM ticket WHERE confirmado = 1";
 					$result = $mysqli->query($sql);
 
 					while($row = mysqli_fetch_array($result)) {
-						echo "<tr class='trBorder'><td class='widthTicketid'>".$row['ticketid']."</td><td>".$row['equipo_1']."</td><td>".$row['cedula']."</td><td>".$row['nombre']."</td><td>".$row['apellido']."</td><td>".$row['telefono']."</td></tr>";
+						echo "<tr><td>".$row['ticketid']."</td><td>".$row['equipo_1']."</td><td>".$row['cedula']."</td><td>".$row['nombre']."</td><td>".$row['apellido']."</td><td>".$row['telefono']."</td></tr>";
 					}
 
-				 */ ?>
-
-			</table>	
-</div>
+				  ?>
+				  <tr>
+				  	<th colspan="7" class="nombreColumna controlPagina">
+				  		<p>1-10 de 100
+					  		<a href=""><i class="material-icons">chevron_left</i></a>
+							<a href=""><i class="material-icons">chevron_right</i></a>
+						</p>
+					</th>
+				  </tr>
+			</table>
+		</div>
 	</div>
 </div>
 

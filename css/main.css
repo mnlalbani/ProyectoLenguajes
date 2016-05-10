@@ -62,7 +62,7 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  display: inline-flex;
+  display: inline-flex; 
   vertical-align: middle;
   padding-bottom: 3px;
   margin-right: 3px;
@@ -460,8 +460,9 @@ background-color: #009688;
     font-weight: 500;
     color: #757575;
 	height: 40px;
-	text-align: left;
-	padding-left: 30px;
+	text-align: right;
+	padding-right: 18px;
+	border-bottom: solid 1px #f1f1f1;
 }
 .tablaResumen tr{
 	height: 40px;
@@ -476,8 +477,16 @@ background-color: #009688;
 .tablaResumen tr:hover:not(.filaNombre){
 	background-color: #eeeeee;
 }
-.tablaResumen .trBorder{
-	border: solid 1px #f1f1f1;
+.tablaResumen .controlPagina{
+	border-bottom: none 0;
+}
+.controlPagina a{
+	text-decoration: none;
+	
+}
+.controlPagina i{
+	color: #757575;
+	font-size: 27px;
 }
 /*Botones y Formulario*/
 .errorText{
