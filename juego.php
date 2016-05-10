@@ -414,7 +414,7 @@
 					}
 
 				  ?>
-				  <tr>
+				  <tr class="filaNombre">
 				  	<th colspan="7" class="nombreColumna controlPagina">
 				  		<p>1-10 de 100
 					  		<a href=""><i class="material-icons">chevron_left</i></a>

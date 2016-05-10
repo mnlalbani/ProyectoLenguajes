@@ -213,6 +213,7 @@ label{
 .tablaLeyenda{
 	width: 100%;
 	text-align: left;
+	border-collapse: collapse;
 }
 .tablaLeyenda th, td{
 	border-bottom: solid 1px #f1f1f1;
