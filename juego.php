@@ -10,7 +10,7 @@
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="POST" action="" id="aguilasCardenales">
-				<p>Aguilas del Zulia vs Cardenales de Lara</p>
+				<p>Cardenales de Lara vs Aguilas del Zulia</p>
 				<input type="text" value="Aguilas del Zulia" id="equipo_1" hidden name="equipo_1"></input>
 				<input type="text" value="Cardenales de Lara" id="equipo_2" hidden name="equipo_2"></input>
 				<p>06:00 PM</p>
@@ -95,7 +95,7 @@
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" onsubmit=" return imprimir(); false;">
-				<p>Navegantes del Magallanes vs Tiburones de La Guaira</p>
+				<p>Tiburones de La Guaira vs Navegantes del Magallanes</p>
 				<input type="text" value="Navegantes del Magallanes" id="equipo_1" hidden name="equipo_1"></input>
 				<input type="text" value="Tiburones de La Guaira" id="equipo_2" hidden name="equipo_2"></input>
 				<p>06:00 PM</p>
@@ -186,7 +186,7 @@
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="" >
-				<p>Leones del Caracas vs Caribes de Oriente</p>
+				<p>Caribes de Oriente vs Leones del Caracas</p>
 				<input type="text" value="Leones del Caracas" id="equipo_1" hidden name="equipo_1"></input>
 				<input type="text" value="Caribes de Oriente" id="equipo_2" hidden name="equipo_2"></input>
 				<p>06:00 PM</p>
@@ -273,7 +273,7 @@
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
 			<form method="post" action="">
-				<p>Bravos de Margarita vs Tigres de Aragua</p>
+				<p>Tigres de Aragua vs Bravos de Margarita</p>
 				<input type="text" value="Bravos de Margarita" id="equipo_1" hidden name="equipo_1"></input>
 				<input type="text" value="Tigres de Aragua" id="equipo_2" hidden name="equipo_2"></input>
 				<p>06:00 PM</p>
@@ -382,10 +382,10 @@
 		<div class="sideNav">
 			<h1>Juegos</h1>
 			<ul>
-				<li><a href="">Aguilas vs Cardenales</a></li>
-				<li><a href="">Magallanes vs Tiburones</a></li>
-				<li><a href="">Leones vs Caribes</a></li>
-				<li><a href="">Bravos vs Tigres</a></li>
+				<li><a href="">Cardenales vs Aguilas</a></li>
+				<li><a href="">Tiburones vs Magallanes</a></li>
+				<li><a href="">Caribes vs Leones</a></li>
+				<li><a href="">Tigres vs Bravos</a></li>
 			</ul>
 		</div>
 		<div class="contenedorTablaResumen">

@@ -14,10 +14,10 @@
 <body>
 		<div class="nav navDisplay">
 			<ul>
-				<li id="juego1"><a href="">Aguilas vs Cardenales</a></li>
-				<li id="juego2"><a href="">Magallanes vs Tiburones</a></li>
-				<li id="juego3"><a href="">Leones vs Caribes</a></li>
-				<li id="juego4"><a href="">Bravos vs Tigres</a></li>
+				<li id="juego1"><a href="">Cardenales vs Aguilas</a></li>
+				<li id="juego2"><a href="">Tiburones vs Magallanes</a></li>
+				<li id="juego3"><a href="">Caribes vs Leones</a></li>
+				<li id="juego4"><a href="">Tigres vs Bravos</a></li>
 				<li id="administracion"><a href="">Administración</a></li>
 			</ul>
 		</div>
