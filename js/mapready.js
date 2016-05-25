@@ -1,4 +1,4 @@
-$(document).ajaxComplete(function(){
+$(document).ready(function(){
   //Estadio Aguilas del Zulia
 if (($('#estadio_aguilas').length == 1) && ($('svg').length == 0)) {
     var rsr = Raphael('estadio_aguilas', '783.04701', '642.00001');

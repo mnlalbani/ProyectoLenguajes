@@ -143,9 +143,11 @@ body{
 }
 
 
-.nav #administracion{
+.nav #administracion, #gResumen{
 	float: right;
 }
+
+
 
 /*Estadio*/
 .stadium{
@@ -448,6 +450,9 @@ background-color: #009688;
 	border-collapse: collapse;
 	border: none;
 }
+.tablaResumen a{
+	text-decoration: none;
+}
 .tablaResumen .headerTable{
 	height: 50px;
 	text-align: left;
@@ -464,6 +469,28 @@ background-color: #009688;
 	text-align: right;
 	padding-right: 18px;
 	border-bottom: solid 1px #f1f1f1;
+}
+.tablaResumen .botoneraAdmin{
+	width: 10px;
+}
+.ganancia{
+	text-align: right;
+}
+
+.botoneraAdmin:nth-child(1){
+	padding-left: 10px;
+}
+.iconAdmin{
+	color: #757575;
+	font-size: 20px
+}
+.iconCheck:hover{
+	color: #009688;
+	transition: .5s;
+}
+.iconCancel:hover{
+	color: #E53935;
+	transition: .5s;
 }
 .tablaResumen tr{
 	height: 40px;

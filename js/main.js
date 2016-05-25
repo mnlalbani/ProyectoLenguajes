@@ -63,16 +63,31 @@ $(document).ready(function(){
    		$('#administracion a').attr('class', 'inactive');
    		return false;
    });
-   $('#administracion a').unbind('click');
-   $('#administracion a').click(function(){
-   		$('.container').load('juego.php .containerAdministracion');
-   		$(this).attr('class', 'active');
-   		$('#juego1 a').attr('class', 'inactive');
-   		$('#juego2 a').attr('class', 'inactive');
-   		$('#juego3 a').attr('class', 'inactive');
-   		$('#juego4 a').attr('class', 'inactive');
-   		return false;
+
+   $('.modTicket').click(function(e){
+      e.preventDefault();
+      var tr = $(this).closest("tr"); 
+      var codigo = $(this).attr('value');
+      var tipo = $(this).attr('tipo');
+          if (confirm("¿Está seguro que desea "+tipo+" "+codigo+"?") == true) {
+              $.post('php/administracionTicket.php',{codigo:codigo,tipo:tipo},function(data){
+              tr.hide("slow", function(){ 
+                  $(this).remove();
+                   });
+                  //$('#response').html(data);
+              });
+          } else {
+            return false;
+          }
    });
+  $('.formulario_modificar').unbind('submit'); 
+  $('.formulario_modificar').on('submit',function(e){
+        e.preventDefault();
+        var details = $('.formulario_modificar').serialize();
+        $.post('php/modificarTicket.php',details,function(data){
+            $('#response').html(data);
+        });
+  });
 
 });
 
@@ -80,20 +95,14 @@ $(document).ajaxComplete(function(){
 
     $('form').attr('autocomplete', 'off');  //agrega el atributo autcomplete='off' a todos los formularios luego de ser cargados por ajax 
 
-   $('#aguilasCardenales').unbind('submit');
-   $('#aguilasCardenales').on('submit',function(e){
+    //Registro de ticket
+   $('.formEstadio').unbind('submit');
+   $('.formEstadio').on('submit',function(e){
       e.preventDefault();
-      var details = $('#aguilasCardenales').serialize();
+      var details = $('.formEstadio').serialize();
       $.post('php/registroTicket.php',details,function(data){
          $("form").trigger("reset");
-         //var arr = JSON.parse(data);
-        /* if (arr.success == true) {
-            $('#response').html(arr.message);
-         }
-         else{
-            $('#response').html(arr.errors);
-         }
-         */
+         $('#response').html(data);
       });
    });
 
@@ -116,30 +125,6 @@ $(document).ajaxComplete(function(){
       });
    });
 
-
-   $('#gResumen').unbind('click');
-   $('#gResumen').on('click',function(e){
-      //console.log("hola");
-      e.preventDefault();      
-      $('.container').load('juego.php .containerResumen',function(){
-         $('.navDisplay').hide();
-      });
-   });
-
-   $('#volver a').unbind('click');
-   $('#volver a').click(function(){
-         console.log('click');
-         $('.navDisplay').show();
-         $('.container').load('juego.php .containerAdministracion');
-         $(this).attr('class', 'active');
-         $('#juego1 a').attr('class', 'inactive');
-         $('#juego2 a').attr('class', 'inactive');
-         $('#juego3 a').attr('class', 'inactive');
-         $('#juego4 a').attr('class', 'inactive');
-         return false;
-   });
-
-
    //Muestra de Errores de longitud en formulario
    $('input').unbind('change keyup paste click');
    $('input').on('change keyup paste click',function(){
@@ -155,12 +140,5 @@ $(document).ajaxComplete(function(){
          $('#imprimir').prop('disabled',false);
          return false;
       }      
-   });
-   $('.sideNav a').unbind('click');
-   $('.sideNav a').on('click',function(e){
-      var juego = $(this).text();
-      $('#nombreJuego').text(juego);
-      e.preventDefault();
-      console.log("cambiado");
    });
 });

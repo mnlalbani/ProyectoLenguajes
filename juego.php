@@ -9,7 +9,7 @@
 		<div class="stadium" id="estadio_aguilas"></div>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
-			<form method="POST" action="" id="aguilasCardenales">
+			<form method="POST" action="" id="aguilasCardenales" class="formEstadio">
 				<p>Cardenales de Lara vs Aguilas del Zulia</p>
 				<input type="text" value="Aguilas del Zulia" id="equipo_1" hidden name="equipo_1"></input>
 				<input type="text" value="Cardenales de Lara" id="equipo_2" hidden name="equipo_2"></input>
@@ -94,7 +94,7 @@
 		<div class="stadium" id="estadio_magallanes"></div>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
-			<form method="post" action="" onsubmit=" return imprimir(); false;">
+			<form method="post" action="" onsubmit=" return imprimir(); false;" class="formEstadio">
 				<p>Tiburones de La Guaira vs Navegantes del Magallanes</p>
 				<input type="text" value="Navegantes del Magallanes" id="equipo_1" hidden name="equipo_1"></input>
 				<input type="text" value="Tiburones de La Guaira" id="equipo_2" hidden name="equipo_2"></input>
@@ -108,7 +108,7 @@
 					<p id="zonaAsiento">Zona Asiento</p>
 					<input type="text" name="zonaElegida" id="zonaElegida" hidden >
 					<input type="text" name="asientoElegido" id="asientoElegido" hidden >
-					<input type="text" hidden id="ticketId" name="ticketId" ></input>
+					<input type="text" hidden id="ticketId" name="ticketId" required></input>
 				<hr>
 				<p class="headerText">Datos del Cliente</p>
 
@@ -185,7 +185,7 @@
 		<div class="stadium" id="estadio_leones"></div>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
-			<form method="post" action="" >
+			<form method="post" action="" class="formEstadio">
 				<p>Caribes de Oriente vs Leones del Caracas</p>
 				<input type="text" value="Leones del Caracas" id="equipo_1" hidden name="equipo_1"></input>
 				<input type="text" value="Caribes de Oriente" id="equipo_2" hidden name="equipo_2"></input>
@@ -199,7 +199,7 @@
 					<p id="zonaAsiento">Zona Asiento</p>
 					<input type="text" name="zonaElegida" id="zonaElegida" hidden >
 					<input type="text" name="asientoElegido" id="asientoElegido" hidden >
-					<input type="text" hidden id="ticketId" name="ticketId" ></input>
+					<input type="text" hidden id="ticketId" name="ticketId" required></input>
 				<hr>
 				<p class="headerText">Datos del Cliente</p>
 
@@ -272,7 +272,7 @@
 		<div class="stadium" id="estadio_bravos"></div>
 		<div class="ticket">
 			<p class="headerText">Datos del juego - Ticket</p>
-			<form method="post" action="">
+			<form method="post" action="" class="formEstadio">
 				<p>Tigres de Aragua vs Bravos de Margarita</p>
 				<input type="text" value="Bravos de Margarita" id="equipo_1" hidden name="equipo_1"></input>
 				<input type="text" value="Tigres de Aragua" id="equipo_2" hidden name="equipo_2"></input>
@@ -349,83 +349,6 @@
 		</div>
 </div>
 
-<div class="containerAdministracion">
-		<div class="track">
-			<form method="POST" action="" id="formAdministracion">
-				<div class="contenedorCampo">
-				<p>Administración de Ticket</p>
-					<label for="ticket_id">Ticket ID: </label>
-						<input type="text" name="ticket_id" id="ticket_id" class="inputText"placeholder="Ticket ID" required></input>
-				</div>
-				<button  class="button" type="submit" name="confirmar" value="confirmar">Confirmar Ticket</button>
-				<button  class="button" type="submit" name="modificar" value="modificar">Modificar Ticket</button>
-				<button  class="button" type="submit" name="cancelar" value="cancelar">Cancelar Ticket</button>
-			</form>
-			<div id="response"></div>
-		</div>
-		<div class="resumen">
-			<p>Resumen de Ventas</p>
-			<button  class="button" id="gResumen">Generar Resumen</button>
-		</div>
-</div>
-
-<div class="containerResumen">
-	<div class="nav navResumen">
-			<ul>
-				<li id="volver"><a href=""><i class="material-icons">arrow_back</i>Volver</a></li>
-			</ul>
-	</div>	
-	<div class="fondoResumen">
-		<div class="headerResumen">
-			<h1>Resumen de Ventas</h1>
-		</div>
-		<div class="sideNav">
-			<h1>Juegos</h1>
-			<ul>
-				<li><a href="">Cardenales vs Aguilas</a></li>
-				<li><a href="">Tiburones vs Magallanes</a></li>
-				<li><a href="">Caribes vs Leones</a></li>
-				<li><a href="">Tigres vs Bravos</a></li>
-			</ul>
-		</div>
-		<div class="contenedorTablaResumen">
-			<table class="tablaResumen">
-				<tr class="filaNombre">
-					<th colspan="7"  class="headerTable" ><p id="nombreJuego">Nombre del Juego</p></th>
-				</tr>
-				<tr class="filaNombre">
-					<th class="nombreColumna">Ticked ID</th>
-					<th class="nombreColumna">Cedula</th>
-					<th class="nombreColumna">Nombre</th>
-					<th class="nombreColumna">Apellido</th>
-					<th class="nombreColumna">Teléfono</th>
-					<th class="nombreColumna">Correo</th>
-				</tr>
-				<?php 
-
-					include("php/connection.php");
-
-
-					$sql = "SELECT * FROM ticket WHERE confirmado = 1";
-					$result = $mysqli->query($sql);
-
-					while($row = mysqli_fetch_array($result)) {
-						echo "<tr><td>".$row['ticketid']."</td><td>".$row['equipo_1']."</td><td>".$row['cedula']."</td><td>".$row['nombre']."</td><td>".$row['apellido']."</td><td>".$row['telefono']."</td></tr>";
-					}
-
-				  ?>
-				  <tr class="filaNombre">
-				  	<th colspan="7" class="nombreColumna controlPagina">
-				  		<p>1-10 de 100
-					  		<a href=""><i class="material-icons">chevron_left</i></a>
-							<a href=""><i class="material-icons">chevron_right</i></a>
-						</p>
-					</th>
-				  </tr>
-			</table>
-		</div>
-	</div>
-</div>
 
 </body>
 </html>
