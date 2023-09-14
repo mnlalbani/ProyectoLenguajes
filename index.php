@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+	<<!-- script type="text/javascript" src="js/jquery-2.2.1.js"></script> -->
+		<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+		
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#009688">
